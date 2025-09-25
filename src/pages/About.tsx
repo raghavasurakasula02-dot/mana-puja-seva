@@ -10,9 +10,9 @@ const About = () => {
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-primary font-telugu-serif">
             గురువు గారి గురించి
           </h1>
-          <h2 className="text-3xl font-semibold text-secondary mb-4">
-            About Guru Garu
-          </h2>
+          <p className="text-xl font-telugu-sans text-secondary mb-4 max-w-4xl mx-auto">
+            సనాతన ధర్మ సంప్రదాయాలను అనుసరించి వైदిక ఆధ్యాత్మిక సేవలను అందించే అనుభవజ్ఞులైన గురువు గారు
+          </p>
           <div className="divider-sacred"></div>
         </div>
 
