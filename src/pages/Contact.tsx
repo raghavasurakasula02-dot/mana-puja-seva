@@ -195,7 +195,7 @@ Message: ${formData.message}
                     <Phone className="h-5 w-5 text-secondary mr-3" />
                     <div>
                       <p className="font-semibold text-secondary">+91 88862 07347</p>
-                      <p className="text-sm text-muted-foreground font-telugu-sans">వैकल्पिक संपर्क / Alternative Contact</p>
+                      <p className="text-sm text-muted-foreground font-telugu-sans">ప్రత్యామ్నాయ సంప్రదింపు / Alternative Contact</p>
                     </div>
                   </a>
                 </div>

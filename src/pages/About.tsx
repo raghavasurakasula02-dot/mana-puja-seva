@@ -1,5 +1,7 @@
 import React from 'react';
-import { Award, Clock, Users, Heart } from 'lucide-react';
+import { Award, Clock, Users, Heart, Star, Shield, BookOpen } from 'lucide-react';
+import spiritualGuru from '@/assets/spiritual-guru-wisdom.jpg';
+import templeAmbiance from '@/assets/temple-spiritual-ambiance.jpg';
 
 const About = () => {
   return (
@@ -19,6 +21,22 @@ const About = () => {
         {/* Main Content */}
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+            {/* Guru Image */}
+            <div className="relative">
+              <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+                <img 
+                  src={spiritualGuru} 
+                  alt="మా గురువు గారు - ఆధ్యాత్మిక గురువు" 
+                  className="w-full h-[500px] object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                <div className="absolute bottom-6 left-6 right-6 text-white">
+                  <h3 className="text-2xl font-bold font-telugu-serif mb-2">మా గురువు గారు</h3>
+                  <p className="text-sm opacity-90">15+ సంవత్సరాల అనుభవంతో</p>
+                </div>
+              </div>
+            </div>
+
             {/* Text Content */}
             <div className="space-y-6">
               <div className="space-y-4">
@@ -34,6 +52,13 @@ const About = () => {
                   సాంప్రదాయిక వేద విధానాలను పూర్ణ భక్తి శ్రద్ధలతో అనుసరిస్తూ, అన్ని రకాల హోమాలు, అభిషేకాలు, 
                   కళ్యాణాలు మరియు వ్రతాలను అత్యంత పవిత్రత మరియు కచ్చితత్వంతో నిర్వహిస్తారు. 
                   భక్తుల ఆధ్యాత్మిక అవసరాలను పూర్తిగా అర్థం చేసుకొని, వారి కోరికలను దైవం ముందు వినవించడంలో నిపుణులు.
+                </p>
+                
+                <p className="text-lg leading-relaxed font-telugu-sans">
+                  గురువు గారు వైదిక సంస్కృతం, ప్రాచీన మంత్ర శాస్త్రం, యజ్ञ కర్మకాండలలో గాఢ పాండిత్యం కలిగి ఉన్నారు. 
+                  ప్రతిరోజూ ప్రాతఃకాలం సంధ్యావందనం, గాయత్రీ జపం, దేవీ దేవతల అర్చనలు చేసుకుంటూ తమ స్వంత జీవితంలో 
+                  ఆధ్యాత్మిక క్రమశిక్షణను పాటిస్తున్నారు. ఈ నిబద్ధతతో భక్తులకు అందించే సేవలు అత్యంత పవిత్రమైనవిగా 
+                  మారుతున్నాయి. భక్తుల సంతృప్తి మరియు దైవానుగ్రహ లాభమే గురువు గారి ప్రధాన లక్ష్యం.
                 </p>
                 
                 <p className="text-muted-foreground leading-relaxed">
@@ -92,7 +117,81 @@ const About = () => {
               </div>
             </div>
 
-            {/* Statistics/Features */}
+          </div>
+
+          {/* Temple Ambiance Image */}
+          <div className="mb-16">
+            <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+              <img 
+                src={templeAmbiance} 
+                alt="పవిత్ర దేవాలయ వాతావరణం" 
+                className="w-full h-64 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent"></div>
+              <div className="absolute left-8 top-1/2 transform -translate-y-1/2 text-white">
+                <h3 className="text-3xl font-bold font-telugu-serif mb-2">పవిత్ర వాతావరణం</h3>
+                <p className="text-lg">దైవిక శక్తులు నివసించే పవిత్ర స్థలం</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Why Choose Us */}
+          <div className="mb-16">
+            <h3 className="text-3xl font-bold text-center mb-8 text-primary font-telugu-serif">
+              మమ్మల్ని ఎందుకు ఎంచుకోవాలి?
+            </h3>
+            <h4 className="text-2xl font-semibold text-center mb-12 text-secondary">
+              Why Choose Us?
+            </h4>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="card-divine p-6 text-center">
+                <div className="bg-primary/10 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                  <Star className="h-8 w-8 text-primary" />
+                </div>
+                <h5 className="text-xl font-semibold text-primary mb-3 font-telugu-serif">
+                  ప్రామాణిక సేవలు
+                </h5>
+                <p className="text-muted-foreground font-telugu-sans">
+                  వేద శాస్త్రానుసారంగా పూర్తిగా ప్రామాణిక విధానాలతో అన్ని సేవలు నిర్వహించబడతాయి. 
+                  ఎలాంటి సంక్షిప్తీకరణలు లేకుండా పూర్ణ పద్ధతిలో హోమాలు, పూజలు చేయబడతాయి.
+                </p>
+              </div>
+
+              <div className="card-divine p-6 text-center">
+                <div className="bg-primary/10 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                  <Shield className="h-8 w-8 text-primary" />
+                </div>
+                <h5 className="text-xl font-semibold text-primary mb-3 font-telugu-serif">
+                  విశ్వసనీయత
+                </h5>
+                <p className="text-muted-foreground font-telugu-sans">
+                  1000+ కుటుంబాల విశ్వాసం పొందిన మా సేవలు పూర్తిగా నమ్మదగినవి. 
+                  ప్రతి సేవలో నిజాయితీ, పవిత్రత, మరియు భక్తుల సంతృప్తిని అందించడంలో మేము నిపుణులం.
+                </p>
+              </div>
+
+              <div className="card-divine p-6 text-center">
+                <div className="bg-primary/10 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                  <BookOpen className="h-8 w-8 text-primary" />
+                </div>
+                <h5 className="text-xl font-semibold text-primary mb-3 font-telugu-serif">
+                  పూర్ణ మార్గదర్శకత్వం
+                </h5>
+                <p className="text-muted-foreground font-telugu-sans">
+                  కేవలం సేవలు చేయడంతో ఆగిపోకుండా, భక్తులకు ఆధ్యాత్మిక విషయాలలో మార్గదర్శకత్వం కూడా అందిస్తాము. 
+                  మీ ఆధ్యాత్మిక ప్రగతికి అవసరమైన సలహాలు ఇస్తాము.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Statistics/Features */}
+          <div className="mb-16">
+            <h3 className="text-3xl font-bold text-center mb-12 text-primary font-telugu-serif">
+              మా విజయ గాథ
+            </h3>
+            
             <div className="space-y-6">
               <div className="grid grid-cols-2 gap-6">
                 <div className="card-divine p-6 text-center">

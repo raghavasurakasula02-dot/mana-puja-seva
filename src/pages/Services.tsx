@@ -1,9 +1,9 @@
 import React from 'react';
 import { Flame, Heart, Crown, BookOpen, Phone, MessageCircle } from 'lucide-react';
-import homamService from '@/assets/homam-service.jpg';
-import abhishekamService from '@/assets/abhishekam-service.jpg';
-import kalyanamService from '@/assets/kalyanam-service.jpg';
-import vratamService from '@/assets/vratam-service.jpg';
+import traditionalHomam from '@/assets/traditional-homam-ceremony.jpg';
+import sacredAbhishekam from '@/assets/sacred-abhishekam-ritual.jpg';
+import divineKalyanam from '@/assets/divine-kalyanam-ceremony.jpg';
+import traditionalVratam from '@/assets/traditional-vratam-ceremony.jpg';
 import ayushyaRudraHomam from '@/assets/ayushya-rudra-homam.jpg';
 import chandiHomam from '@/assets/chandi-homam.jpg';
 import ganapatiHomam from '@/assets/ganapati-homam.jpg';
@@ -39,7 +39,7 @@ const Services = () => {
           <div className="flex flex-col md:flex-row items-center mb-12">
             <div className="relative w-20 h-20 mr-6 mb-4 md:mb-0">
               <img 
-                src={homamService} 
+                src={traditionalHomam} 
                 alt="Homams అగ్ని కార్యక్రమాలు" 
                 className="w-full h-full object-cover rounded-full border-4 border-primary shadow-lg"
               />
@@ -277,7 +277,7 @@ const Services = () => {
           <div className="flex flex-col md:flex-row items-center mb-12">
             <div className="relative w-20 h-20 mr-6 mb-4 md:mb-0">
               <img 
-                src={abhishekamService} 
+                src={sacredAbhishekam}
                 alt="అభిషేకాలు పవిత్ర స్నానాలు" 
                 className="w-full h-full object-cover rounded-full border-4 border-primary shadow-lg"
               />
@@ -298,7 +298,7 @@ const Services = () => {
             <div className="card-divine group hover:shadow-xl transition-all duration-300">
               <div className="relative h-48 overflow-hidden rounded-t-xl">
                 <img 
-                  src={abhishekamService} 
+                  src={sacredAbhishekam}
                   alt="పాలాభిషేకం" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
@@ -337,7 +337,7 @@ const Services = () => {
             <div className="card-divine group hover:shadow-xl transition-all duration-300">
               <div className="relative h-48 overflow-hidden rounded-t-xl">
                 <img 
-                  src={abhishekamService} 
+                  src={sacredAbhishekam}
                   alt="జలాభిషేకం" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
@@ -376,7 +376,7 @@ const Services = () => {
             <div className="card-divine group hover:shadow-xl transition-all duration-300">
               <div className="relative h-48 overflow-hidden rounded-t-xl">
                 <img 
-                  src={abhishekamService} 
+                  src={sacredAbhishekam} 
                   alt="పంచామృత అభిషేకం" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
@@ -419,7 +419,7 @@ const Services = () => {
           <div className="flex flex-col md:flex-row items-center mb-12">
             <div className="relative w-20 h-20 mr-6 mb-4 md:mb-0">
               <img 
-                src={kalyanamService} 
+                src={divineKalyanam}
                 alt="కళ్యాణాలు దైవ వివాహ వేడుకలు" 
                 className="w-full h-full object-cover rounded-full border-4 border-primary shadow-lg"
               />
@@ -440,7 +440,7 @@ const Services = () => {
             <div className="card-divine overflow-hidden group">
               <div className="relative h-56 overflow-hidden">
                 <img 
-                  src={kalyanamService} 
+                  src={divineKalyanam}
                   alt="వెంకటేశ్వర కళ్యాణం" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
@@ -481,7 +481,7 @@ const Services = () => {
             <div className="card-divine overflow-hidden group">
               <div className="relative h-56 overflow-hidden">
                 <img 
-                  src={kalyanamService} 
+                  src={divineKalyanam} 
                   alt="శివ-పార్వతి కళ్యాణం" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
@@ -525,7 +525,7 @@ const Services = () => {
           <div className="flex flex-col md:flex-row items-center mb-12">
             <div className="relative w-20 h-20 mr-6 mb-4 md:mb-0">
               <img 
-                src={vratamService} 
+                src={traditionalVratam}
                 alt="వ్రతాలు ధార్మిక అనుష్ఠానాలు" 
                 className="w-full h-full object-cover rounded-full border-4 border-primary shadow-lg"
               />
@@ -546,7 +546,7 @@ const Services = () => {
             <div className="card-divine overflow-hidden group">
               <div className="relative h-48 overflow-hidden">
                 <img 
-                  src={vratamService} 
+                  src={traditionalVratam}
                   alt="సత్యనారాయణ వ్రతం" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
@@ -586,7 +586,7 @@ const Services = () => {
             <div className="card-divine overflow-hidden group">
               <div className="relative h-48 overflow-hidden">
                 <img 
-                  src={vratamService} 
+                  src={traditionalVratam}
                   alt="వరలక్ష్మి వ్రతం" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
@@ -626,7 +626,7 @@ const Services = () => {
             <div className="card-divine overflow-hidden group">
               <div className="relative h-48 overflow-hidden">
                 <img 
-                  src={vratamService} 
+                  src={traditionalVratam} 
                   alt="వినాయక చవితి వ్రతం" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
