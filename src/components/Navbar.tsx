@@ -21,12 +21,12 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3 hover:scale-105 transition-transform duration-300">
-            <img src={logo} alt="MANA POOJA" className="h-10 w-10" />
-            <div>
-              <h1 className="text-xl font-bold text-primary font-telugu-serif">MANA POOJA</h1>
-              <p className="text-xs text-muted-foreground">Traditional Spiritual Services</p>
-            </div>
+          <Link to="/" className="flex items-center hover:scale-105 transition-transform duration-300">
+            <img 
+              src={logo} 
+              alt="MANA POOJA" 
+              className="h-12 w-auto sm:h-14 md:h-16 lg:h-18 max-w-full object-contain" 
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -40,6 +40,7 @@ const Navbar = () => {
                     ? 'text-primary bg-primary/10'
                     : 'text-foreground hover:text-primary hover:bg-primary/5'
                 }`}
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               >
                 {item.name}
                 {isActive(item.href) && (
@@ -76,7 +77,10 @@ const Navbar = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
                 className={`block px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                   isActive(item.href)
                     ? 'text-primary bg-primary/10'
