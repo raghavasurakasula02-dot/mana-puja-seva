@@ -30,16 +30,27 @@ const About = () => {
                 </h4>
                 
                 <p className="text-lg leading-relaxed font-telugu-sans">
-                  గురువు గారు అనేక సంవత్సరాల ఆధ్యాత్మిక అనుభవం కలిగిన వ్యక్తి. వైదిక సంప్రదాయాలను 
-                  అనుసరించి అన్ని రకాల హోమాలు, అభిషేకాలు, కళ్యాణాలు మరియు వ్రతాలను పూర్ణ భక్తి శ్రద్ధలతో 
-                  నిర్వహిస్తారు.
+                  గురువు గారు పంద్రేళ్లకు మించిన ఆధ్యాత్మిక అనుభవం కలిగిన అత్యంత విశ్వసనీయ వ్యక్తిత్వం. 
+                  సాంప్రదాయిక వేద విధానాలను పూర్ణ భక్తి శ్రద్ధలతో అనుసరిస్తూ, అన్ని రకాల హోమాలు, అభిషేకాలు, 
+                  కళ్యాణాలు మరియు వ్రతాలను అత్యంత పవిత్రత మరియు కచ్చితత్వంతో నిర్వహిస్తారు. 
+                  భక్తుల ఆధ్యాత్మిక అవసరాలను పూర్తిగా అర్థం చేసుకొని, వారి కోరికలను దైవం ముందు వినవించడంలో నిపుణులు.
                 </p>
                 
                 <p className="text-muted-foreground leading-relaxed">
-                  Guru Garu is an experienced spiritual practitioner with years of dedication to Hindu traditions. 
-                  Following authentic vedic procedures, he performs all types of homams, abhishekams, kalyanams, 
-                  and vratams with complete devotion and traditional accuracy.
+                  Guru Garu is a highly trusted spiritual personality with over 15 years of authentic experience. 
+                  Following traditional vedic procedures with complete devotion and dedication, he performs all types of 
+                  homams, abhishekams, kalyanams, and vratams with utmost sanctity and precision. 
+                  He is expert in understanding devotees' spiritual needs and presenting their wishes before the divine.
                 </p>
+                
+                <div className="mt-6 p-4 bg-primary/5 rounded-lg border-l-4 border-primary">
+                  <p className="text-primary font-medium font-telugu-serif mb-2">
+                    "సర్వే భవన్తు సుఖినః సర్వే సన్తు నిరామయాః"
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    Let everyone be happy, let everyone be free from disease - Our guiding principle
+                  </p>
+                </div>
               </div>
 
               <div className="space-y-4">
@@ -51,14 +62,33 @@ const About = () => {
                 </h4>
                 
                 <p className="text-lg leading-relaxed font-telugu-sans">
-                  భక్తుల ఆధ్యాత్మిక అవసరాలను తీర్చడం మరియు సాంప్రదాయిక హిందూ సంస్కృతిని 
-                  భావి తరాలకు అందించడం మా ప్రధాన లక్ష్యం.
+                  భక్తుల ఆధ్యాత్మిక అవసరాలను సంపూర్ణంగా తీర్చడం, వైదిక సంప్రదాయాలను కాపాడటం, 
+                  మరియు భవిష్యత్ తరాలకు అసలైన హిందూ ధర్మ సంస్కృతిని అందించడం మా ప్రధాన లక్ష్యం. 
+                  ప్రతి భక్తుడు దైవ కృపను పొంది, శాంతి సంతోషాలతో జీవించాలని మా కోరిక. 
+                  సేవే మాధవయ అని భావించి, అన్ని సేవలను భగవంతుడికి అర్పణగా భావిస్తాము.
                 </p>
                 
                 <p className="text-muted-foreground leading-relaxed">
-                  Our primary mission is to fulfill the spiritual needs of devotees and preserve traditional 
-                  Hindu culture for future generations through authentic religious practices.
+                  Our primary mission is to completely fulfill devotees' spiritual needs, preserve vedic traditions, 
+                  and deliver authentic Hindu dharma and culture to future generations. 
+                  We wish that every devotee receives divine grace and lives with peace and happiness. 
+                  Believing that service is devotion to God, we offer all our services as offerings to the divine.
                 </p>
+                
+                <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+                  <div className="p-4 bg-gradient-temple rounded-lg">
+                    <h5 className="font-semibold text-primary font-telugu-serif">సంప్రదాయ పాలన</h5>
+                    <p className="text-sm text-muted-foreground">Traditional Adherence</p>
+                  </div>
+                  <div className="p-4 bg-gradient-temple rounded-lg">
+                    <h5 className="font-semibold text-primary font-telugu-serif">భక్తి భావన</h5>
+                    <p className="text-sm text-muted-foreground">Devotional Spirit</p>
+                  </div>
+                  <div className="p-4 bg-gradient-temple rounded-lg">
+                    <h5 className="font-semibold text-primary font-telugu-serif">సేవా భావన</h5>
+                    <p className="text-sm text-muted-foreground">Service Minded</p>
+                  </div>
+                </div>
               </div>
             </div>
 

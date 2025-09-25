@@ -3,6 +3,10 @@ import { useNavigate } from 'react-router-dom';
 import { Flame, Heart, Crown, BookOpen, Phone, MessageCircle } from 'lucide-react';
 import ServiceIcon from '@/components/ServiceIcon';
 import heroBanner from '@/assets/hero-banner.png';
+import homamService from '@/assets/homam-service.jpg';
+import abhishekamService from '@/assets/abhishekam-service.jpg';
+import kalyanamService from '@/assets/kalyanam-service.jpg';
+import vratamService from '@/assets/vratam-service.jpg';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -12,24 +16,36 @@ const Home = () => {
       icon: Flame,
       title: 'హోమాలు',
       subtitle: 'Homams',
+      description: 'వైదిక సంప్రదాయాలతో అగ్ని కార్యక్రమాలు',
+      englishDesc: 'Sacred fire rituals following vedic traditions',
+      image: homamService,
       href: '/services#homams'
     },
     {
       icon: Heart,
       title: 'అభిషేకాలు',
       subtitle: 'Abhishekams',
+      description: 'దేవతలకు పవిత్ర స్నానాలు',
+      englishDesc: 'Sacred bathing rituals for deities',
+      image: abhishekamService,
       href: '/services#abhishekams'
     },
     {
       icon: Crown,
       title: 'కళ్యాణాలు',
       subtitle: 'Kalyanams',
+      description: 'దైవ దంపతుల పవిత్ర వివాహ వేడుకలు',
+      englishDesc: 'Divine wedding ceremonies',
+      image: kalyanamService,
       href: '/services#kalyanams'
     },
     {
       icon: BookOpen,
       title: 'వ్రతాలు',
       subtitle: 'Vratams',
+      description: 'ధార్మిక నిబంధనలు మరియు ఉపవాసాలు',
+      englishDesc: 'Religious observances and fasting rituals',
+      image: vratamService,
       href: '/services#vratams'
     }
   ];
@@ -54,14 +70,17 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[70vh] md:h-[80vh] overflow-hidden">
+      <section className="relative h-[70vh] md:h-[80vh] lg:h-[85vh] overflow-hidden">
         <div className="absolute inset-0">
           <img 
             src={heroBanner} 
-            alt="Guru Garu performing traditional pooja" 
-            className="w-full h-full object-cover"
+            alt="Guru Garu performing traditional pooja ceremony with sacred fire and spiritual rituals" 
+            className="w-full h-full object-cover object-center sm:object-top md:object-center"
+            style={{ 
+              objectPosition: window.innerWidth < 768 ? 'center top' : 'center center'
+            }}
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/20"></div>
         </div>
         
         <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
@@ -136,16 +155,48 @@ const Home = () => {
             <div className="divider-sacred"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {services.map((service, index) => (
-              <div key={index} className="animate-scale-divine" style={{ animationDelay: `${index * 0.1}s` }}>
-                <ServiceIcon
-                  icon={service.icon}
-                  title={service.title}
-                  subtitle={service.subtitle}
-                  href={service.href}
-                  onClick={() => handleServiceClick(service.href)}
-                />
+              <div 
+                key={index} 
+                className="card-divine overflow-hidden cursor-pointer group transform hover:scale-105 transition-all duration-300 animate-scale-divine" 
+                style={{ animationDelay: `${index * 0.1}s` }}
+                onClick={() => handleServiceClick(service.href)}
+              >
+                <div className="relative h-48 overflow-hidden">
+                  <img 
+                    src={service.image} 
+                    alt={`${service.title} - ${service.subtitle}`}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                  <div className="absolute top-4 left-4">
+                    <div className="bg-primary/90 p-3 rounded-full">
+                      <service.icon className="h-6 w-6 text-white" />
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold text-primary mb-2 font-telugu-serif">
+                    {service.title}
+                  </h3>
+                  <h4 className="text-lg font-semibold text-secondary mb-3">
+                    {service.subtitle}
+                  </h4>
+                  <p className="text-muted-foreground mb-2 font-telugu-sans">
+                    {service.description}
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    {service.englishDesc}
+                  </p>
+                  
+                  <div className="mt-4">
+                    <span className="text-primary font-medium hover:text-primary-glow transition-colors">
+                      మరింత తెలుసుకోండి →
+                    </span>
+                  </div>
+                </div>
               </div>
             ))}
           </div>

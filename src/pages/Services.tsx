@@ -1,5 +1,13 @@
 import React from 'react';
 import { Flame, Heart, Crown, BookOpen, Phone, MessageCircle } from 'lucide-react';
+import homamService from '@/assets/homam-service.jpg';
+import abhishekamService from '@/assets/abhishekam-service.jpg';
+import kalyanamService from '@/assets/kalyanam-service.jpg';
+import vratamService from '@/assets/vratam-service.jpg';
+import ayushyaRudraHomam from '@/assets/ayushya-rudra-homam.jpg';
+import chandiHomam from '@/assets/chandi-homam.jpg';
+import ganapatiHomam from '@/assets/ganapati-homam.jpg';
+import navagrahaHomam from '@/assets/navagraha-homam.jpg';
 
 const Services = () => {
   const handleWhatsAppClick = () => {
@@ -29,64 +37,158 @@ const Services = () => {
         {/* Homams Section */}
         <section id="homams" className="mb-16">
           <div className="flex items-center mb-8">
-            <Flame className="h-8 w-8 text-primary mr-3" />
+            <div className="relative w-16 h-16 mr-4">
+              <img 
+                src={homamService} 
+                alt="Homams" 
+                className="w-full h-full object-cover rounded-full border-4 border-primary"
+              />
+              <div className="absolute inset-0 bg-primary/20 rounded-full flex items-center justify-center">
+                <Flame className="h-8 w-8 text-white" />
+              </div>
+            </div>
             <div>
               <h2 className="text-3xl font-bold text-primary font-telugu-serif">హోమాలు</h2>
-              <h3 className="text-2xl font-semibold text-secondary">Homams</h3>
+              <h3 className="text-2xl font-semibold text-secondary">Sacred Fire Rituals</h3>
+              <p className="text-muted-foreground font-telugu-sans">అగ్ని దేవుడికి అర్పించే పవిత్ర కార్యక్రమాలు</p>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="card-divine p-6">
-              <h4 className="text-xl font-semibold text-primary mb-3 font-telugu-serif">ఆయుష్య రుద్ర హోమం</h4>
-              <h5 className="text-lg font-medium text-secondary mb-4">Ayushya Rudra Homam</h5>
-              <p className="text-muted-foreground mb-4 font-telugu-sans">
-                దీర్ఘాయుష్షు, ఆరోగ్యం మరియు అభివృద్ధి కోసం నిర్వహించబడే శక్తివంతమైన హోమం. 
-                లార్డ్ శివకు సమర్పించబడే ఈ హోమం అన్ని రకాల అడ్డంకులను తొలగిస్తుంది.
-              </p>
-              <p className="text-muted-foreground text-sm">
-                Powerful homam performed for longevity, health, and prosperity. 
-                This sacred fire ritual dedicated to Lord Shiva removes all obstacles.
-              </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="card-divine overflow-hidden group">
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src={ayushyaRudraHomam} 
+                  alt="Ayushya Rudra Homam" 
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              </div>
+              <div className="p-6">
+                <h4 className="text-xl font-semibold text-primary mb-3 font-telugu-serif">ఆయుష్య రుద్ర హోమం</h4>
+                <h5 className="text-lg font-medium text-secondary mb-4">Ayushya Rudra Homam</h5>
+                <p className="text-muted-foreground mb-4 font-telugu-sans">
+                  దీర్ఘాయుష్షు, ఆరోగ్యం మరియు అభివృద్ధి కోసం నిర్వహించబడే అత్యంత శక్తివంతమైన హోమం. 
+                  లార్డ్ శివుని పవిత్ర రుద్రం చదివి, 121 ఆహుతులతో నిర్వహించబడుతుంది. 
+                  కుటుంబ సభ్యుల ఆరోగ్యం, జీవితంలో స్థిరత్వం, మరియు అకాల మృత్యు భయాన్ని తొలగిస్తుంది.
+                </p>
+                <p className="text-muted-foreground text-sm mb-4">
+                  Most powerful homam performed for longevity, health, and prosperity. 
+                  Dedicated to Lord Shiva with sacred Rudram recitation and 121 offerings. 
+                  Protects family health, brings stability, and removes fear of untimely death.
+                </p>
+                <div className="border-t pt-4">
+                  <p className="text-sm text-primary font-medium">ప్రత్యేక లాభాలు / Special Benefits:</p>
+                  <ul className="text-sm text-muted-foreground mt-2 space-y-1">
+                    <li>• దీర్ఘాయుష్షు మరియు ఆరోగ్యం</li>
+                    <li>• కుటుంబ సుఖ శాంతులు</li>
+                    <li>• అకాల మృత్యు భయ నివారణ</li>
+                    <li>• మానసిక స్థైర్యం</li>
+                  </ul>
+                </div>
+              </div>
             </div>
 
-            <div className="card-divine p-6">
-              <h4 className="text-xl font-semibold text-primary mb-3 font-telugu-serif">చండీ హోమం</h4>
-              <h5 className="text-lg font-medium text-secondary mb-4">Chandi Homam (700 Slokas)</h5>
-              <p className="text-muted-foreground mb-4 font-telugu-sans">
-                దుర్గా సప్తశతి 700 శ్లోకాలతో నిర్వహించబడే అత్యంత పవిత్రమైన హోమం. 
-                దుష్ట శక్తుల నివారణ మరియు దైవ కృపా పొందడానికి.
-              </p>
-              <p className="text-muted-foreground text-sm">
-                Most sacred homam performed with 700 slokas of Durga Saptashati. 
-                For protection from negative energies and divine blessings.
-              </p>
+            <div className="card-divine overflow-hidden group">
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src={chandiHomam} 
+                  alt="Chandi Homam" 
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              </div>
+              <div className="p-6">
+                <h4 className="text-xl font-semibold text-primary mb-3 font-telugu-serif">చండీ హోమం</h4>
+                <h5 className="text-lg font-medium text-secondary mb-4">Chandi Homam (700 Slokas)</h5>
+                <p className="text-muted-foreground mb-4 font-telugu-sans">
+                  దుర్గా సప్తశతి 700 శ్లోకాలతో నిర్వహించబడే అత్యంత పవిత్రమైన మరియు శక్తివంతమైన హోమం. 
+                  దేవి దుర్గ యొక్క దైవిక శక్తిని ఆవాహన చేసి, దుష్ట శక్తుల నివారణ, శత్రు భయ నివారణ, 
+                  మరియు ఆధ్యాత్మిక శక్తి పెరుగుటకు నిర్వహించబడుతుంది.
+                </p>
+                <p className="text-muted-foreground text-sm mb-4">
+                  Most sacred and powerful homam performed with 700 slokas of Durga Saptashati. 
+                  Invokes divine energy of Goddess Durga for protection from negative forces, 
+                  removal of enemies, and enhancement of spiritual power.
+                </p>
+                <div className="border-t pt-4">
+                  <p className="text-sm text-primary font-medium">ప్రత్యేక లాభాలు / Special Benefits:</p>
+                  <ul className="text-sm text-muted-foreground mt-2 space-y-1">
+                    <li>• దుష్ట శక్తుల నివారణ</li>
+                    <li>• శత్రు భయ నివారణ</li>
+                    <li>• దైవిక రక్షణ</li>
+                    <li>• ఆధ్యాత్మిక శక్తి వృద్ధి</li>
+                  </ul>
+                </div>
+              </div>
             </div>
 
-            <div className="card-divine p-6">
-              <h4 className="text-xl font-semibold text-primary mb-3 font-telugu-serif">మహా గణపతి హోమం</h4>
-              <h5 className="text-lg font-medium text-secondary mb-4">Maha Ganapati Homam</h5>
-              <p className="text-muted-foreground mb-4 font-telugu-sans">
-                విఘ్న వినాశనం మరియు కార్య సిద్ధి కోసం లార్డ్ గణేశకు సమర్పించబడే హోమం. 
-                కొత్త పనుల ప్రారంభంలో అత్యంత అవసరం.
-              </p>
-              <p className="text-muted-foreground text-sm">
-                Homam dedicated to Lord Ganesha for removing obstacles and ensuring success. 
-                Essential before starting any new ventures.
-              </p>
+            <div className="card-divine overflow-hidden group">
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src={ganapatiHomam} 
+                  alt="Maha Ganapati Homam" 
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              </div>
+              <div className="p-6">
+                <h4 className="text-xl font-semibold text-primary mb-3 font-telugu-serif">మహా గణపతి హోమం</h4>
+                <h5 className="text-lg font-medium text-secondary mb-4">Maha Ganapati Homam</h5>
+                <p className="text-muted-foreground mb-4 font-telugu-sans">
+                  విఘ్నేశ్వరుడైన లార్డ్ గణేశకు సమర్పించబడే అత్యంత ముఖ్యమైన హోమం. 
+                  కొత్త ఇల్లు, వ్యాపారం, వివాహం, విద్య వంటి అన్ని శుభ కార్యాలకు ముందు నిర్వహించబడుతుంది. 
+                  21 రకాల మోదకాలు మరియు దుర్వ గడ్డితో ప్రత్యేకంగా పూజించబడుతుంది.
+                </p>
+                <p className="text-muted-foreground text-sm mb-4">
+                  Essential homam dedicated to Lord Ganesha, the remover of obstacles. 
+                  Performed before all auspicious activities like new house, business, marriage, education. 
+                  Special worship with 21 varieties of modakas and durva grass.
+                </p>
+                <div className="border-t pt-4">
+                  <p className="text-sm text-primary font-medium">ప్రత్యేక లాభాలు / Special Benefits:</p>
+                  <ul className="text-sm text-muted-foreground mt-2 space-y-1">
+                    <li>• విఘ్న నివారణ</li>
+                    <li>• కార్య సిద్ధి</li>
+                    <li>• బుద్ధి వైభవం</li>
+                    <li>• సకల సంపత్తులు</li>
+                  </ul>
+                </div>
+              </div>
             </div>
 
-            <div className="card-divine p-6">
-              <h4 className="text-xl font-semibold text-primary mb-3 font-telugu-serif">నవగ్రహ శాంతి హోమం</h4>
-              <h5 className="text-lg font-medium text-secondary mb-4">Navagraha Shanti Homam</h5>
-              <p className="text-muted-foreground mb-4 font-telugu-sans">
-                తొమ్మిది గ్రహాల దోషాలను తొలగించడానికి నిర్వహించబడే హోమం. 
-                జ్యోతిష్య సమస్యలు మరియు గ్రహ దోషాల నివారణకు.
-              </p>
-              <p className="text-muted-foreground text-sm">
-                Homam performed to appease the nine planets and remove planetary doshas. 
-                For astrological problems and planetary afflictions.
-              </p>
+            <div className="card-divine overflow-hidden group">
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src={navagrahaHomam} 
+                  alt="Navagraha Shanti Homam" 
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              </div>
+              <div className="p-6">
+                <h4 className="text-xl font-semibold text-primary mb-3 font-telugu-serif">నవగ్రహ శాంతి హోమం</h4>
+                <h5 className="text-lg font-medium text-secondary mb-4">Navagraha Shanti Homam</h5>
+                <p className="text-muted-foreground mb-4 font-telugu-sans">
+                  తొమ్మిది గ్రహాల (సూర్యుడు, చంద్రుడు, మంగళుడు, బుధుడు, గురువు, శుక్రుడు, శనిభగవాన్, రాహువు, కేతువు) 
+                  దోషాలను తొలగించడానికి నిర్వహించబడే విశేష హోమం. 
+                  జాతకంలో గ్రహ దోషాలు, సాడేసాతి, కాలసర్ప దోషం వంటి వాటి నివారణకు అత్యంత ప్రభావకరం.
+                </p>
+                <p className="text-muted-foreground text-sm mb-4">
+                  Special homam to appease nine planets and remove planetary doshas. 
+                  Highly effective for astrological problems, Sade Sati, Kala Sarpa Dosha. 
+                  Each planet is worshipped with specific mantras and offerings.
+                </p>
+                <div className="border-t pt-4">
+                  <p className="text-sm text-primary font-medium">ప్రత్యేక లాభాలు / Special Benefits:</p>
+                  <ul className="text-sm text-muted-foreground mt-2 space-y-1">
+                    <li>• గ్రహ దోష నివారణ</li>
+                    <li>• జ్యోతిష్య సమస్యల పరిష్కారం</li>
+                    <li>• కాలసర్ప దోష నివారణ</li>
+                    <li>• జీవిత సమస్యలకు పరిష్కారం</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -94,44 +196,66 @@ const Services = () => {
         {/* Abhishekams Section */}
         <section id="abhishekams" className="mb-16">
           <div className="flex items-center mb-8">
-            <Heart className="h-8 w-8 text-primary mr-3" />
+            <div className="relative w-16 h-16 mr-4">
+              <img 
+                src={abhishekamService} 
+                alt="Abhishekams" 
+                className="w-full h-full object-cover rounded-full border-4 border-primary"
+              />
+              <div className="absolute inset-0 bg-primary/20 rounded-full flex items-center justify-center">
+                <Heart className="h-8 w-8 text-white" />
+              </div>
+            </div>
             <div>
               <h2 className="text-3xl font-bold text-primary font-telugu-serif">అభిషేకాలు</h2>
-              <h3 className="text-2xl font-semibold text-secondary">Abhishekams</h3>
+              <h3 className="text-2xl font-semibold text-secondary">Sacred Bathing Rituals</h3>
+              <p className="text-muted-foreground font-telugu-sans">దేవతలకు పవిత్ర స్నానాలు అర్పించే వేద విధానాలు</p>
             </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="card-divine p-6">
+            <div className="card-divine p-6 text-center group hover:shadow-lg transition-all duration-300">
+              <div className="bg-primary/10 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                <Heart className="h-8 w-8 text-primary" />
+              </div>
               <h4 className="text-xl font-semibold text-primary mb-3 font-telugu-serif">పాలాభిషేకం</h4>
               <h5 className="text-lg font-medium text-secondary mb-4">Palabhishekam</h5>
-              <p className="text-muted-foreground font-telugu-sans">
-                పవిత్రమైన పాలతో దేవతలకు అభిషేకం చేసి దైవ కృపను పొందడం.
+              <p className="text-muted-foreground font-telugu-sans mb-3">
+                పవిత్రమైన గోపాలతో లార్డ్ శివ లింగం మరియు ఇతర దేవతలకు అభిషేకం చేసి దైవ కృపను పొందడం. 
+                ధన, ధాన్య, సంతాన సంపత్తుల కోసం అత్యంత ప్రభావకరం.
               </p>
-              <p className="text-muted-foreground text-sm mt-2">
-                Sacred milk abhishekam for divine blessings and prosperity.
+              <p className="text-muted-foreground text-sm">
+                Sacred cow milk abhishekam for divine blessings, wealth, prosperity, and fertility.
               </p>
             </div>
 
-            <div className="card-divine p-6">
+            <div className="card-divine p-6 text-center group hover:shadow-lg transition-all duration-300">
+              <div className="bg-primary/10 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                <Heart className="h-8 w-8 text-primary" />
+              </div>
               <h4 className="text-xl font-semibold text-primary mb-3 font-telugu-serif">జలాభిషేకం</h4>
               <h5 className="text-lg font-medium text-secondary mb-4">Jalabhishekam</h5>
-              <p className="text-muted-foreground font-telugu-sans">
-                పవిత్ర జలంతో దేవతలకు అభిషేకం చేసి మనస్సుకు శాంతిని తెచ్చే విధానం.
+              <p className="text-muted-foreground font-telugu-sans mb-3">
+                గంగా జలం, కావేరి జలం వంటి పవిత్ర నదుల జలంతో దేవతలకు అభిషేకం చేసి మనస్సుకు శాంతిని తెచ్చే విధానం. 
+                పాప నివారణ మరియు మానసిక స్వచ్ఛత కోసం.
               </p>
-              <p className="text-muted-foreground text-sm mt-2">
-                Sacred water abhishekam for mental peace and purification.
+              <p className="text-muted-foreground text-sm">
+                Sacred water abhishekam with holy river water for mental peace, purification, and sin removal.
               </p>
             </div>
 
-            <div className="card-divine p-6">
+            <div className="card-divine p-6 text-center group hover:shadow-lg transition-all duration-300">
+              <div className="bg-primary/10 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                <Heart className="h-8 w-8 text-primary" />
+              </div>
               <h4 className="text-xl font-semibold text-primary mb-3 font-telugu-serif">పంచామృత అభిషేకం</h4>
               <h5 className="text-lg font-medium text-secondary mb-4">Panchamruta Abhishekam</h5>
-              <p className="text-muted-foreground font-telugu-sans">
-                పాలు, తేనె, గుడ్డు, దధి, చక్కెర మిశ్రమంతో చేసే ప్రత్యేక అభిషేకం.
+              <p className="text-muted-foreground font-telugu-sans mb-3">
+                పాలు, తేనె, చక్కెర, దధి, నెయ్యి అనే ఐదు పవిత్ర పదార్థాల మిశ్రమంతో చేసే అత్యంత ప్రత్యేకమైన అభిషేకం. 
+                సంపూర్ణ దైవ కృపా కోసం.
               </p>
-              <p className="text-muted-foreground text-sm mt-2">
-                Special abhishekam with five sacred ingredients for complete blessings.
+              <p className="text-muted-foreground text-sm">
+                Most special abhishekam with five sacred ingredients (milk, honey, sugar, curd, ghee) for complete divine blessings.
               </p>
             </div>
           </div>

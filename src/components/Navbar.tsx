@@ -21,12 +21,15 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center hover:scale-105 transition-transform duration-300">
+          <Link to="/" className="flex items-center space-x-3 hover:scale-105 transition-transform duration-300">
             <img 
               src={logo} 
-              alt="MANA POOJA" 
-              className="h-12 w-auto sm:h-14 md:h-16 lg:h-18 max-w-full object-contain" 
+              alt="MANA POOJA Logo" 
+              className="h-10 w-auto sm:h-12 md:h-14 object-contain" 
             />
+            <span className="text-xl sm:text-2xl md:text-3xl font-bold text-primary font-telugu-serif">
+              మన పూజ
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
