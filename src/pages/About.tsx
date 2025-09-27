@@ -1,44 +1,44 @@
 import React from 'react';
 import { Award, Clock, Users, Heart, Star, Shield, BookOpen } from 'lucide-react';
-import spiritualGuru from '@/assets/spiritual-guru-wisdom.jpg';
-import templeAmbiance from '@/assets/temple-spiritual-ambiance.jpg';
+import templeImage from '@/assets/temple-spiritual-ambiance.jpg';
+import guruTemple from '@/assets/guru-temple-meditation.jpg';
 
 const About = () => {
   return (
-    <div className="min-h-screen py-16">
-      <div className="container mx-auto px-4">
+    <div className="min-h-screen py-8 sm:py-12 lg:py-16">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-primary font-telugu-serif">
+        <div className="text-center mb-12 lg:mb-16">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-primary font-telugu-serif">
             గురువు గారి గురించి
           </h1>
-          <p className="text-xl font-telugu-sans text-secondary mb-4 max-w-4xl mx-auto">
-            సనాతన ధర్మ సంప్రదాయాలను అనుసరించి వైदిక ఆధ్యాత్మిక సేవలను అందించే అనుభవజ్ఞులైన గురువు గారు
+          <p className="text-lg sm:text-xl font-telugu-sans text-secondary mb-4 max-w-4xl mx-auto px-4">
+            సనాతన ధర్మ సంప్రదాయాలను అనుసరించి వైదిక ఆధ్యాత్మిక సేవలను అందించే అనుభవజ్ఞులైన గురువు గారు
           </p>
           <div className="divider-sacred"></div>
         </div>
 
         {/* Main Content */}
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-            {/* Guru Image */}
-            <div className="relative">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-16">
+            {/* Temple Image */}
+            <div className="relative order-2 lg:order-1">
               <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                 <img 
-                  src={spiritualGuru} 
-                  alt="మా గురువు గారు - ఆధ్యాత్మిక గురువు" 
-                  className="w-full h-[500px] object-cover"
+                  src={guruTemple} 
+                  alt="పవిత్ర దేవాలయ వాతావరణంలో ధ్యానం" 
+                  className="w-full h-[400px] sm:h-[450px] lg:h-[500px] object-cover object-center"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                <div className="absolute bottom-6 left-6 right-6 text-white">
-                  <h3 className="text-2xl font-bold font-telugu-serif mb-2">మా గురువు గారు</h3>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 text-white">
+                  <h3 className="text-xl sm:text-2xl font-bold font-telugu-serif mb-2">పవిత్ర ధ్యాన స్థలం</h3>
                   <p className="text-sm opacity-90">15+ సంవత్సరాల అనుభవంతో</p>
                 </div>
               </div>
             </div>
 
             {/* Text Content */}
-            <div className="space-y-6">
+            <div className="space-y-6 order-1 lg:order-2">
               <div className="space-y-4">
                 <h3 className="text-2xl font-semibold text-primary font-telugu-serif">
                   ఆధ్యాత్మిక అనుభవం
@@ -55,7 +55,7 @@ const About = () => {
                 </p>
                 
                 <p className="text-lg leading-relaxed font-telugu-sans">
-                  గురువు గారు వైదిక సంస్కృతం, ప్రాచీన మంత్ర శాస్త్రం, యజ్ञ కర్మకాండలలో గాఢ పాండిత్యం కలిగి ఉన్నారు. 
+                  గురువు గారు వైదిక సంస్కృతం, ప్రాచీన మంత్ర శాస్త్రం, యజ్ఞ కర్మకాండలలో గాఢ పాండిత్యం కలిగి ఉన్నారు. 
                   ప్రతిరోజూ ప్రాతఃకాలం సంధ్యావందనం, గాయత్రీ జపం, దేవీ దేవతల అర్చనలు చేసుకుంటూ తమ స్వంత జీవితంలో 
                   ఆధ్యాత్మిక క్రమశిక్షణను పాటిస్తున్నారు. ఈ నిబద్ధతతో భక్తులకు అందించే సేవలు అత్యంత పవిత్రమైనవిగా 
                   మారుతున్నాయి. భక్తుల సంతృప్తి మరియు దైవానుగ్రహ లాభమే గురువు గారి ప్రధాన లక్ష్యం.
@@ -100,7 +100,7 @@ const About = () => {
                   Believing that service is devotion to God, we offer all our services as offerings to the divine.
                 </p>
                 
-                <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+                <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-center">
                   <div className="p-4 bg-gradient-temple rounded-lg">
                     <h5 className="font-semibold text-primary font-telugu-serif">సంప్రదాయ పాలన</h5>
                     <p className="text-sm text-muted-foreground">Traditional Adherence</p>
@@ -116,21 +116,20 @@ const About = () => {
                 </div>
               </div>
             </div>
-
           </div>
 
           {/* Temple Ambiance Image */}
           <div className="mb-16">
             <div className="relative overflow-hidden rounded-2xl shadow-2xl">
               <img 
-                src={templeAmbiance} 
+                src={templeImage} 
                 alt="పవిత్ర దేవాలయ వాతావరణం" 
-                className="w-full h-64 object-cover"
+                className="w-full h-48 sm:h-56 md:h-64 lg:h-72 object-cover object-center"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent"></div>
-              <div className="absolute left-8 top-1/2 transform -translate-y-1/2 text-white">
-                <h3 className="text-3xl font-bold font-telugu-serif mb-2">పవిత్ర వాతావరణం</h3>
-                <p className="text-lg">దైవిక శక్తులు నివసించే పవిత్ర స్థలం</p>
+              <div className="absolute left-4 sm:left-6 lg:left-8 top-1/2 transform -translate-y-1/2 text-white max-w-xs sm:max-w-md">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold font-telugu-serif mb-2">పవిత్ర వాతావరణం</h3>
+                <p className="text-sm sm:text-base lg:text-lg">దైవిక శక్తులు నివసించే పవిత్ర స్థలం</p>
               </div>
             </div>
           </div>
@@ -144,7 +143,7 @@ const About = () => {
               Why Choose Us?
             </h4>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
               <div className="card-divine p-6 text-center">
                 <div className="bg-primary/10 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                   <Star className="h-8 w-8 text-primary" />
@@ -193,7 +192,7 @@ const About = () => {
             </h3>
             
             <div className="space-y-6">
-              <div className="grid grid-cols-2 gap-6">
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
                 <div className="card-divine p-6 text-center">
                   <div className="bg-primary/10 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                     <Clock className="h-8 w-8 text-primary" />
@@ -242,7 +241,7 @@ const About = () => {
               Specializations
             </h4>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
               <div className="card-divine p-6 text-center">
                 <h5 className="text-lg font-semibold text-primary mb-2 font-telugu-serif">గృహప్రవేశం</h5>
                 <p className="text-sm text-muted-foreground">Gruhapravesham</p>
@@ -280,24 +279,18 @@ const About = () => {
             </p>
             
             <p className="text-muted-foreground mb-8">
-              For any questions about our spiritual services or to book a consultation, 
-              please feel free to contact us.
+              For any spiritual needs or to know more about our services, please contact us.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="tel:+919989101037"
-                className="btn-divine"
-              >
-                Call: +91 99891 01037
-              </a>
-              
-              <a
-                href="tel:+918886207347"
-                className="btn-sacred"
-              >
-                Call: +91 88862 07347
-              </a>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 bg-primary rounded-full"></div>
+                <span className="text-primary font-medium">WhatsApp: +91 9876543210</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 bg-primary rounded-full"></div>
+                <span className="text-primary font-medium">Email: spiritualservices@example.com</span>
+              </div>
             </div>
           </div>
         </div>
