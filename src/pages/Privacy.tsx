@@ -1,9 +1,20 @@
 import React from 'react';
+import { ArrowLeft } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const Privacy = () => {
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen py-16">
       <div className="container mx-auto px-4 max-w-4xl">
+        {/* Back Button */}
+        <button
+          onClick={() => navigate(-1)}
+          className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors mb-8 font-telugu-sans"
+        >
+          <ArrowLeft className="h-5 w-5" />
+          వెనుకకు వెళ్ళండి
+        </button>
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-primary">
             Privacy Policy

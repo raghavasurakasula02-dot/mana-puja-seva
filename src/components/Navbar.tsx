@@ -8,10 +8,10 @@ const Navbar = () => {
   const location = useLocation();
 
   const navigationItems = [
-    { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
-    { name: 'Services', href: '/services' },
-    { name: 'Contact', href: '/contact' },
+    { name: 'హోమ్', href: '/' },
+    { name: 'గురించి', href: '/about' },
+    { name: 'సేవలు', href: '/services' },
+    { name: 'సంప్రదించండి', href: '/contact' },
   ];
 
   const isActive = (href: string) => location.pathname === href;

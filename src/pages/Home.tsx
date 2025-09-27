@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Flame, Heart, Crown, BookOpen, Phone, MessageCircle } from 'lucide-react';
 import ServiceIcon from '@/components/ServiceIcon';
-import heroBanner from '@/assets/hero-banner.png';
+import guruTemple from '@/assets/guru-temple-meditation.jpg';
 import homamService from '@/assets/homam-service.jpg';
 import abhishekamService from '@/assets/abhishekam-service.jpg';
 import kalyanamService from '@/assets/kalyanam-service.jpg';
