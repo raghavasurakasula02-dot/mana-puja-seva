@@ -62,45 +62,57 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[70vh] md:h-[80vh] lg:h-[85vh] overflow-hidden">
-        <div className="absolute inset-0">
-          <img 
-            src={guruTemple}
-            alt="Guru Garu performing traditional pooja ceremony with sacred fire and spiritual rituals" 
-            className="w-full h-full object-cover object-center sm:object-top md:object-center"
-            style={{ 
-              objectPosition: window.innerWidth < 768 ? 'center top' : 'center center'
-            }}
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/20"></div>
-        </div>
-        
-        <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
-          <div className="max-w-2xl text-white animate-fade-in">
-            <h1 className="text-4xl md:text-6xl font-bold mb-4 font-telugu-serif text-divine">
-              మన పూజ
-            </h1>
-            <p className="text-lg md:text-xl mb-8 leading-relaxed font-telugu-sans">
-              సనాతన ధర్మ సంప్రదాయాలను అనుసరించి<br />
-              పవిత్ర వైదిక ఆధ్యాత్మిక సేవలు
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4">
-              <button
-                onClick={handleWhatsAppClick}
-                className="btn-divine flex items-center justify-center space-x-2"
-              >
-                <MessageCircle className="h-5 w-5" />
-                <span className="font-telugu-sans">గురువు గారితో మాట్లాడండి</span>
-              </button>
+      <section className="relative min-h-screen flex items-center justify-center py-16">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+            {/* Left Content */}
+            <div className="text-center lg:text-left space-y-6">
+              <h1 className="text-5xl md:text-7xl font-bold text-primary font-telugu-serif animate-fade-in">
+                మన పూజ
+              </h1>
               
-              <a
-                href="tel:+919989101037"
-                className="btn-sacred flex items-center justify-center space-x-2"
-              >
-                <Phone className="h-5 w-5" />
-                <span className="font-telugu-sans">ఫోన్ చేయండి</span>
-              </a>
+              <div className="space-y-4 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+                <p className="text-xl md:text-2xl text-secondary font-telugu-sans">
+                  సనాతన ధర్మ సంప్రదాయాలను అనుసరించి
+                </p>
+                <p className="text-lg md:text-xl text-muted-foreground font-telugu-sans">
+                  పవిత్ర వైదిక ఆధ్యాత్మిక సేవలు
+                </p>
+              </div>
+              
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mt-8 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+                <button
+                  onClick={handleWhatsAppClick}
+                  className="btn-divine flex items-center justify-center gap-2"
+                >
+                  <MessageCircle className="h-5 w-5" />
+                  గురువు గారితో మాట్లాడండి
+                </button>
+                
+                <a
+                  href="tel:+919989101037"
+                  className="btn-sacred flex items-center justify-center gap-2"
+                >
+                  <Phone className="h-5 w-5" />
+                  ఫోన్ చేయండి
+                </a>
+              </div>
+            </div>
+            
+            {/* Right Image */}
+            <div className="relative animate-fade-in" style={{ animationDelay: '0.3s' }}>
+              <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+                <img 
+                  src={guruTemple} 
+                  alt="గురువు గారు పవిత్ర ఆలయంలో ధ్యానంలో" 
+                  className="w-full h-[600px] object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+                <div className="absolute bottom-8 left-8 right-8 text-white">
+                  <h3 className="text-2xl font-bold font-telugu-serif mb-2">మా గురువు గారు</h3>
+                  <p className="text-lg opacity-90 font-telugu-sans">పవిత్ర ఆలయంలో ఆధ్యాత్మిక సేవలు</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
