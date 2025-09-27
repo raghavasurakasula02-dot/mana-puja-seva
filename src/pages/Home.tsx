@@ -65,7 +65,7 @@ const Home = () => {
       <section className="relative h-[70vh] md:h-[80vh] lg:h-[85vh] overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src={heroBanner} 
+            src={guruTemple}
             alt="Guru Garu performing traditional pooja ceremony with sacred fire and spiritual rituals" 
             className="w-full h-full object-cover object-center sm:object-top md:object-center"
             style={{ 
