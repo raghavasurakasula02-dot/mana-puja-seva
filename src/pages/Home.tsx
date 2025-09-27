@@ -42,58 +42,6 @@ const Home = () => {
     }
   ];
 
-  const additionalServices = [
-    {
-      title: 'ఆయుష్య రుద్ర హోమం',
-      description: 'దీర్ఘాయుష్షు మరియు ఆరోగ్య కోసం అత్యంత శక్తివంతమైన హోమం',
-      category: 'హోమాలు'
-    },
-    {
-      title: 'చండీ హోమం',
-      description: 'దుర్గా సప్తశతి 700 శ్లోకాలతో అత్యంత శక్తివంతమైన హోమం',
-      category: 'హోమాలు'
-    },
-    {
-      title: 'మహా గణపతి హోమం',
-      description: 'విఘ్నేశ్వరుడికి సమర్పించే విఘ్న నివారణ హోమం',
-      category: 'హోమాలు'
-    },
-    {
-      title: 'నవగ్రహ శాంతి హోమం',
-      description: 'తొమ్మిది గ్రహాల దోషాలను తొలగించే ప్రత్యేక హోమం',
-      category: 'హోమాలు'
-    },
-    {
-      title: 'వెంకటేశ్వర స్వామి కళ్యాణం',
-      description: 'తిరుమల వెంకటేశ్వర స్వామి మరియు అలమేలు మంగయ్య కళ్యాణ ఉత్సవం',
-      category: 'కళ్యాణాలు'
-    },
-    {
-      title: 'శివపార్వతి కళ్యాణం',
-      description: 'భగవాన్ శివ మరియు మాత పార్వతి దేవి యొక్క పవిత్ర వివాహ వేడుక',
-      category: 'కళ్యాణాలు'
-    },
-    {
-      title: 'గణేశ అభిషేకం',
-      description: 'విఘ్నేశ్వరుడికి పంచామృత అభిషేకం మరియు అలంకారం',
-      category: 'అభిషేకాలు'
-    },
-    {
-      title: 'శివ అభిషేకం',
-      description: 'శివలింగానికి రుద్రాభిషేకం మరియు మహా అభిషేకం',
-      category: 'అభిషేకాలు'
-    },
-    {
-      title: 'వరలక్ష్మి వ్రతం',
-      description: 'దేవి లక్ష్మి దేవికి సమర్పించే స్త్రీల ప్రత్యేక వ్రతం',
-      category: 'వ్రతాలు'
-    },
-    {
-      title: 'వినాయక చవితి వ్రతం',
-      description: 'లార్డ్ గణేశ జన్మదిన వేడుకలు మరియు ప్రత్యేక పూజలు',
-      category: 'వ్రతాలు'
-    }
-  ];
 
   const handleServiceClick = (href: string) => {
     const [path, hash] = href.split('#');
@@ -255,47 +203,14 @@ const Home = () => {
             ))}
           </div>
 
-          {/* Additional Services List */}
-          <div className="bg-gradient-temple rounded-2xl p-8 max-w-6xl mx-auto">
-            <div className="text-center mb-8">
-              <h3 className="text-2xl md:text-3xl font-bold text-primary font-telugu-serif mb-4">
-                మరిన్ని ప్రత్యేక సేవలు
-              </h3>
-              <p className="text-muted-foreground font-telugu-sans">
-                మా గురువు గారి అనుభవంతో అందించబడే వివిధ ఆధ్యాత్మిక సేవలు
-              </p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {additionalServices.map((service, index) => (
-                <div 
-                  key={index}
-                  className="bg-white/80 backdrop-blur-sm p-6 rounded-xl border border-primary/10 hover:border-primary/30 transition-all duration-300 cursor-pointer group"
-                  onClick={() => handleServiceClick('/services')}
-                >
-                  <div className="mb-4">
-                    <span className="text-xs text-primary/70 font-telugu-sans bg-primary/10 px-2 py-1 rounded-full">
-                      {service.category}
-                    </span>
-                  </div>
-                  <h4 className="text-lg font-semibold text-primary font-telugu-serif mb-2 group-hover:text-primary-glow transition-colors">
-                    {service.title}
-                  </h4>
-                  <p className="text-muted-foreground text-sm font-telugu-sans leading-relaxed">
-                    {service.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-            
-            <div className="text-center mt-8">
-              <button
-                onClick={() => handleServiceClick('/services')}
-                className="btn-divine px-8 py-3"
-              >
-                అన్ని సేవలు చూడండి
-              </button>
-            </div>
+          {/* View All Services Button */}
+          <div className="text-center mt-12">
+            <button
+              onClick={() => handleServiceClick('/services')}
+              className="btn-divine px-8 py-4 text-lg"
+            >
+              అన్ని సేవలు చూడండి
+            </button>
           </div>
         </div>
       </section>
