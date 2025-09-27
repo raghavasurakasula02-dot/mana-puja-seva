@@ -42,6 +42,59 @@ const Home = () => {
     }
   ];
 
+  const additionalServices = [
+    {
+      title: 'ఆయుష్య రుద్ర హోమం',
+      description: 'దీర్ఘాయుష్షు మరియు ఆరోగ్య కోసం అత్యంత శక్తివంతమైన హోమం',
+      category: 'హోమాలు'
+    },
+    {
+      title: 'చండీ హోమం',
+      description: 'దుర్గా సప్తశతి 700 శ్లోకాలతో అత్యంత శక్తివంతమైన హోమం',
+      category: 'హోమాలు'
+    },
+    {
+      title: 'మహా గణపతి హోమం',
+      description: 'విఘ్నేశ్వరుడికి సమర్పించే విఘ్న నివారణ హోమం',
+      category: 'హోమాలు'
+    },
+    {
+      title: 'నవగ్రహ శాంతి హోమం',
+      description: 'తొమ్మిది గ్రహాల దోషాలను తొలగించే ప్రత్యేక హోమం',
+      category: 'హోమాలు'
+    },
+    {
+      title: 'వెంకటేశ్వర స్వామి కళ్యాణం',
+      description: 'తిరుమల వెంకటేశ్వర స్వామి మరియు అలమేలు మంగయ్య కళ్యాణ ఉత్సవం',
+      category: 'కళ్యాణాలు'
+    },
+    {
+      title: 'శివపార్వతి కళ్యాణం',
+      description: 'భగవాన్ శివ మరియు మాత పార్వతి దేవి యొక్క పవిత్ర వివాహ వేడుక',
+      category: 'కళ్యాణాలు'
+    },
+    {
+      title: 'గణేశ అభిషేకం',
+      description: 'విఘ్నేశ్వరుడికి పంచామృత అభిషేకం మరియు అలంకారం',
+      category: 'అభిషేకాలు'
+    },
+    {
+      title: 'శివ అభిషేకం',
+      description: 'శివలింగానికి రుద్రాభిషేకం మరియు మహా అభిషేకం',
+      category: 'అభిషేకాలు'
+    },
+    {
+      title: 'వరలక్ష్మి వ్రతం',
+      description: 'దేవి లక్ష్మి దేవికి సమర్పించే స్త్రీల ప్రత్యేక వ్రతం',
+      category: 'వ్రతాలు'
+    },
+    {
+      title: 'వినాయక చవితి వ్రతం',
+      description: 'లార్డ్ గణేశ జన్మదిన వేడుకలు మరియు ప్రత్యేక పూజలు',
+      category: 'వ్రతాలు'
+    }
+  ];
+
   const handleServiceClick = (href: string) => {
     const [path, hash] = href.split('#');
     navigate(path);
@@ -64,53 +117,53 @@ const Home = () => {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center py-16">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center max-w-7xl mx-auto">
             {/* Left Content */}
-            <div className="text-center lg:text-left space-y-6">
-              <h1 className="text-5xl md:text-7xl font-bold text-primary font-telugu-serif animate-fade-in">
+            <div className="text-center lg:text-left space-y-8 lg:pr-8">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-primary font-telugu-serif animate-fade-in leading-tight">
                 మన పూజ
               </h1>
               
               <div className="space-y-4 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-                <p className="text-xl md:text-2xl text-secondary font-telugu-sans">
+                <p className="text-lg sm:text-xl lg:text-2xl text-secondary font-telugu-sans leading-relaxed">
                   సనాతన ధర్మ సంప్రదాయాలను అనుసరించి
                 </p>
-                <p className="text-lg md:text-xl text-muted-foreground font-telugu-sans">
+                <p className="text-base sm:text-lg lg:text-xl text-muted-foreground font-telugu-sans leading-relaxed">
                   పవిత్ర వైదిక ఆధ్యాత్మిక సేవలు
                 </p>
               </div>
               
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mt-8 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
                 <button
                   onClick={handleWhatsAppClick}
-                  className="btn-divine flex items-center justify-center gap-2"
+                  className="btn-divine flex items-center justify-center gap-2 px-6 py-3 text-sm sm:text-base"
                 >
-                  <MessageCircle className="h-5 w-5" />
+                  <MessageCircle className="h-4 w-4 sm:h-5 sm:w-5" />
                   గురువు గారితో మాట్లాడండి
                 </button>
                 
                 <a
                   href="tel:+919989101037"
-                  className="btn-sacred flex items-center justify-center gap-2"
+                  className="btn-sacred flex items-center justify-center gap-2 px-6 py-3 text-sm sm:text-base"
                 >
-                  <Phone className="h-5 w-5" />
+                  <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
                   ఫోన్ చేయండి
                 </a>
               </div>
             </div>
             
             {/* Right Image */}
-            <div className="relative animate-fade-in" style={{ animationDelay: '0.3s' }}>
+            <div className="relative animate-fade-in order-first lg:order-last" style={{ animationDelay: '0.3s' }}>
               <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                 <img 
                   src={guruTemple} 
                   alt="గురువు గారు పవిత్ర ఆలయంలో ధ్యానంలో" 
-                  className="w-full h-[600px] object-cover"
+                  className="w-full h-[400px] sm:h-[500px] lg:h-[600px] object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
-                <div className="absolute bottom-8 left-8 right-8 text-white">
-                  <h3 className="text-2xl font-bold font-telugu-serif mb-2">మా గురువు గారు</h3>
-                  <p className="text-lg opacity-90 font-telugu-sans">పవిత్ర ఆలయంలో ఆధ్యాత్మిక సేవలు</p>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                <div className="absolute bottom-6 left-6 right-6 text-white">
+                  <h3 className="text-xl sm:text-2xl font-bold font-telugu-serif mb-2">మా గురువు గారు</h3>
+                  <p className="text-base sm:text-lg opacity-90 font-telugu-sans">పవిత్ర ఆలయంలో ఆధ్యాత్మిక సేవలు</p>
                 </div>
               </div>
             </div>
@@ -156,7 +209,8 @@ const Home = () => {
             <div className="divider-sacred"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          {/* Main Services Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto mb-16">
             {services.map((service, index) => (
               <div 
                 key={index} 
@@ -199,6 +253,49 @@ const Home = () => {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Additional Services List */}
+          <div className="bg-gradient-temple rounded-2xl p-8 max-w-6xl mx-auto">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl md:text-3xl font-bold text-primary font-telugu-serif mb-4">
+                మరిన్ని ప్రత్యేక సేవలు
+              </h3>
+              <p className="text-muted-foreground font-telugu-sans">
+                మా గురువు గారి అనుభవంతో అందించబడే వివిధ ఆధ్యాత్మిక సేవలు
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {additionalServices.map((service, index) => (
+                <div 
+                  key={index}
+                  className="bg-white/80 backdrop-blur-sm p-6 rounded-xl border border-primary/10 hover:border-primary/30 transition-all duration-300 cursor-pointer group"
+                  onClick={() => handleServiceClick('/services')}
+                >
+                  <div className="mb-4">
+                    <span className="text-xs text-primary/70 font-telugu-sans bg-primary/10 px-2 py-1 rounded-full">
+                      {service.category}
+                    </span>
+                  </div>
+                  <h4 className="text-lg font-semibold text-primary font-telugu-serif mb-2 group-hover:text-primary-glow transition-colors">
+                    {service.title}
+                  </h4>
+                  <p className="text-muted-foreground text-sm font-telugu-sans leading-relaxed">
+                    {service.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+            
+            <div className="text-center mt-8">
+              <button
+                onClick={() => handleServiceClick('/services')}
+                className="btn-divine px-8 py-3"
+              >
+                అన్ని సేవలు చూడండి
+              </button>
+            </div>
           </div>
         </div>
       </section>
