@@ -82,88 +82,90 @@ const Contact = () => {
         </div>
 
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
             {/* Contact Form */}
-            <div className="card-divine p-6 lg:p-8 h-full flex flex-col justify-between">
-              <div>
-                <h3 className="text-2xl lg:text-3xl font-bold mb-6 text-primary font-telugu-serif">
-                  మాకు సందేశం పంపండి
-                </h3>
+            <div className="card-divine p-6 lg:p-8 flex flex-col flex-1">
+              <h3 className="text-2xl lg:text-3xl font-bold mb-6 text-primary font-telugu-serif">
+                మాకు సందేశం పంపండి
+              </h3>
 
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div>
-                    <label className="block text-sm font-medium mb-2 font-telugu-sans">
-                      పేరు *
-                    </label>
-                    <Input
-                      type="text"
-                      value={formData.name}
-                      onChange={(e) => handleInputChange('name', e.target.value)}
-                      placeholder="మీ పూర్తి పేరు"
-                      required
-                    />
-                  </div>
+              <form onSubmit={handleSubmit} className="space-y-6 flex-1 flex flex-col">
+                <div>
+                  <label className="block text-sm font-medium mb-2 font-telugu-sans">
+                    పేరు *
+                  </label>
+                  <Input
+                    type="text"
+                    value={formData.name}
+                    onChange={(e) => handleInputChange('name', e.target.value)}
+                    placeholder="మీ పూర్తి పేరు"
+                    required
+                  />
+                </div>
 
-                  <div>
-                    <label className="block text-sm font-medium mb-2 font-telugu-sans">
-                      ఇమెయిల్ *
-                    </label>
-                    <Input
-                      type="email"
-                      value={formData.email}
-                      onChange={(e) => handleInputChange('email', e.target.value)}
-                      placeholder="మీ ఇమెయిల్"
-                      required
-                    />
-                  </div>
+                <div>
+                  <label className="block text-sm font-medium mb-2 font-telugu-sans">
+                    ఇమెయిల్ *
+                  </label>
+                  <Input
+                    type="email"
+                    value={formData.email}
+                    onChange={(e) => handleInputChange('email', e.target.value)}
+                    placeholder="మీ ఇమెయిల్"
+                    required
+                  />
+                </div>
 
-                  <div>
-                    <label className="block text-sm font-medium mb-2 font-telugu-sans">
-                      సేవ *
-                    </label>
-                    <Select value={formData.service} onValueChange={(value) => handleInputChange('service', value)}>
-                      <SelectTrigger>
-                        <SelectValue placeholder="సేవను ఎంచుకోండి" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        {services.map((service) => (
-                          <SelectItem key={service} value={service}>
-                            {service}
-                          </SelectItem>
-                        ))}
-                      </SelectContent>
-                    </Select>
-                  </div>
+                <div>
+                  <label className="block text-sm font-medium mb-2 font-telugu-sans">
+                    సేవ *
+                  </label>
+                  <Select
+                    value={formData.service}
+                    onValueChange={(value) => handleInputChange('service', value)}
+                  >
+                    <SelectTrigger>
+                      <SelectValue placeholder="సేవను ఎంచుకోండి" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {services.map((service) => (
+                        <SelectItem key={service} value={service}>
+                          {service}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                </div>
 
-                  <div>
-                    <label className="block text-sm font-medium mb-2 font-telugu-sans">
-                      సందేశం *
-                    </label>
-                    <Textarea
-                      value={formData.message}
-                      onChange={(e) => handleInputChange('message', e.target.value)}
-                      placeholder="మీ అవసరాలను వివరంగా రాయండి"
-                      rows={4}
-                      required
-                    />
-                  </div>
+                <div className="flex-1">
+                  <label className="block text-sm font-medium mb-2 font-telugu-sans">
+                    సందేశం *
+                  </label>
+                  <Textarea
+                    value={formData.message}
+                    onChange={(e) => handleInputChange('message', e.target.value)}
+                    placeholder="మీ అవసరాలను వివరంగా రాయండి"
+                    rows={4}
+                    required
+                    className="h-full"
+                  />
+                </div>
 
-                  <Button type="submit" className="w-full btn-divine">
-                    <MessageCircle className="h-5 w-5 mr-2" />
-                    <span className="font-telugu-sans">WhatsApp లో పంపండి</span>
-                  </Button>
-                </form>
-              </div>
+                <Button type="submit" className="w-full btn-divine mt-4">
+                  <MessageCircle className="h-5 w-5 mr-2" />
+                  <span className="font-telugu-sans">WhatsApp లో పంపండి</span>
+                </Button>
+              </form>
             </div>
 
-            {/* Contact Information */}
-            <div className="grid grid-rows-4 gap-6 h-full">
+            {/* Contact Information - Balanced Cards */}
+            <div className="flex flex-col gap-6 h-full">
               {/* Phone Numbers */}
-              <div className="card-divine p-8 flex flex-col justify-between">
+              <div className="card-divine p-6 flex-1 flex flex-col">
                 <div>
-                  <div className="flex items-center mb-6">
-                    <Phone className="h-7 w-7 text-primary mr-4" />
-                    <h3 className="text-xl lg:text-2xl font-semibold text-primary font-telugu-serif">
+                  <div className="flex items-center mb-4">
+                    <Phone className="h-6 w-6 text-primary mr-3" />
+                    <h3 className="text-xl font-semibold text-primary font-telugu-serif">
                       ఫోన్ నంబర్లు
                     </h3>
                   </div>
@@ -178,7 +180,6 @@ const Contact = () => {
                         <p className="text-muted-foreground font-telugu-sans">ప్రాథమిక సంప్రదింపు</p>
                       </div>
                     </a>
-
                     <a
                       href="tel:+918886207347"
                       className="flex items-center p-4 bg-secondary/5 rounded-xl hover:bg-secondary/10 transition-colors group"
@@ -194,7 +195,7 @@ const Contact = () => {
               </div>
 
               {/* WhatsApp */}
-              <div className="card-divine p-6 flex flex-col justify-between">
+              <div className="card-divine p-6 flex-1 flex flex-col justify-between">
                 <div>
                   <div className="flex items-center mb-4">
                     <MessageCircle className="h-6 w-6 text-green-600 mr-3" />
@@ -205,7 +206,10 @@ const Contact = () => {
                   <p className="text-muted-foreground mb-4 font-telugu-sans">
                     త్వరిత సమాధానం కోసం WhatsApp లో మాట్లాడండి
                   </p>
-                  <Button onClick={handleWhatsAppClick} className="w-full bg-green-600 hover:bg-green-700 text-white">
+                  <Button
+                    onClick={handleWhatsAppClick}
+                    className="w-full bg-green-600 hover:bg-green-700 text-white"
+                  >
                     <MessageCircle className="h-5 w-5 mr-2" />
                     <span className="font-telugu-sans">WhatsApp లో చాట్ చేయండి</span>
                   </Button>
@@ -213,7 +217,7 @@ const Contact = () => {
               </div>
 
               {/* Service Hours */}
-              <div className="card-divine p-6 flex flex-col justify-between">
+              <div className="card-divine p-6 flex-1 flex flex-col">
                 <div>
                   <div className="flex items-center mb-4">
                     <Clock className="h-6 w-6 text-primary mr-3" />
@@ -230,7 +234,7 @@ const Contact = () => {
               </div>
 
               {/* Website */}
-              <div className="card-divine p-4 flex flex-col justify-center">
+              <div className="card-divine p-6 flex-1 flex flex-col justify-center min-h-[150px]">
                 <div className="flex items-center mb-2">
                   <Mail className="h-5 w-5 text-primary mr-3" />
                   <h3 className="text-lg font-semibold text-primary font-telugu-serif">
