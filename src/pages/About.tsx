@@ -273,23 +273,30 @@ const About = () => {
               Get in Touch
             </h4>
             
-            <p className="text-muted-foreground mb-6 font-telugu-sans">
-              మీ ఆధ్యాత్మిక అవసరాలకు సంబంధించి ఏదైనా సందేహాలు లేదా సేవల గురించి మరింత తెలుసుకోవాలంటే 
-              మమ్మల్ని సంప్రదించండి.
-            </p>
-            
-            <p className="text-muted-foreground mb-8">
-              For any spiritual needs or to know more about our services, please contact us.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <div className="flex items-center gap-2">
-                <div className="w-2 h-2 bg-primary rounded-full"></div>
-                <span className="text-primary font-medium">WhatsApp: +91 9876543210</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-2 h-2 bg-primary rounded-full"></div>
-                <span className="text-primary font-medium">Email: spiritualservices@example.com</span>
+            <div className="max-w-2xl mx-auto space-y-6">
+              <p className="text-muted-foreground font-telugu-sans text-lg">
+                మీకు ఎలాంటి ఆధ్యాత్మిక సేవలు అవసరమైనా లేదా ఏమైనా సందేహాలు ఉంటే దయచేసి సంకోచించకుండా మాతో సంప్రదించండి
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                <div className="text-center">
+                  <h5 className="font-semibold text-primary mb-2 font-telugu-serif">ఫోన్ నంబర్లు</h5>
+                  <div className="space-y-1">
+                    <a href="tel:+919989101037" className="block text-muted-foreground hover:text-primary transition-colors">
+                      +91 99891 01037
+                    </a>
+                    <a href="tel:+918886207347" className="block text-muted-foreground hover:text-primary transition-colors">
+                      +91 88862 07347
+                    </a>
+                  </div>
+                </div>
+                
+                <div className="text-center">
+                  <h5 className="font-semibold text-primary mb-2 font-telugu-serif">ఇమెయిల్</h5>
+                  <a href="mailto:siva.karnam@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+                    siva.karnam@gmail.com
+                  </a>
+                </div>
               </div>
             </div>
           </div>

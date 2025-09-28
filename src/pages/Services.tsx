@@ -446,7 +446,7 @@ const Services = () => {
             <div className="card-divine overflow-hidden group">
               <div className="relative h-56 overflow-hidden">
                 <img 
-                  src={divineKalyanam}
+                  src={venkateswaraKalyanam}
                   alt="వెంకటేశ్వర కళ్యాణం" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
@@ -487,7 +487,7 @@ const Services = () => {
             <div className="card-divine overflow-hidden group">
               <div className="relative h-56 overflow-hidden">
                 <img 
-                  src={divineKalyanam} 
+                  src={shivaparvatiKalyanam} 
                   alt="శివ-పార్వతి కళ్యాణం" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
@@ -592,7 +592,7 @@ const Services = () => {
             <div className="card-divine overflow-hidden group">
               <div className="relative h-48 overflow-hidden">
                 <img 
-                  src={traditionalVratam}
+                  src={varalakshmiVratam}
                   alt="వరలక్ష్మి వ్రతం" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
@@ -632,7 +632,7 @@ const Services = () => {
             <div className="card-divine overflow-hidden group">
               <div className="relative h-48 overflow-hidden">
                 <img 
-                  src={traditionalVratam} 
+                  src={vinayakaChavithiVratam} 
                   alt="వినాయక చవితి వ్రతం" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />

@@ -65,10 +65,10 @@ const Home = () => {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center py-16">
         <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center max-w-7xl mx-auto">
+         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center max-w-7xl mx-auto">
             {/* Left Content */}
-            <div className="text-center lg:text-left space-y-8 lg:pr-8">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-primary font-telugu-serif animate-fade-in leading-tight">
+            <div className="text-center lg:text-left space-y-6 lg:space-y-8">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-primary font-telugu-serif animate-fade-in leading-tight">
                 మన పూజ
               </h1>
               
@@ -106,7 +106,7 @@ const Home = () => {
                 <img 
                   src={guruTemple} 
                   alt="గురువు గారు పవిత్ర ఆలయంలో ధ్యానంలో" 
-                  className="w-full h-[400px] sm:h-[500px] lg:h-[600px] object-cover"
+                  className="w-full h-[350px] sm:h-[450px] lg:h-[500px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                 <div className="absolute bottom-6 left-6 right-6 text-white">
