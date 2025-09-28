@@ -5,14 +5,14 @@ import guruTemple from '@/assets/guru-temple-meditation.jpg';
 
 const About = () => {
   return (
-    <div className="min-h-screen py-12 lg:py-20">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen py-8 md:py-12 xl:py-16">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         {/* Header */}
-        <div className="text-center mb-16 lg:mb-24">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 lg:mb-8 text-primary font-telugu-serif">
+        <div className="text-center mb-12 md:mb-16 xl:mb-20">
+          <h1 className="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-bold mb-4 md:mb-6 xl:mb-8 text-primary font-telugu-serif">
             గురువు గారి గురించి
           </h1>
-          <p className="text-lg sm:text-xl lg:text-2xl font-telugu-sans text-secondary mb-8 max-w-5xl mx-auto px-4 leading-relaxed">
+          <p className="text-base md:text-lg xl:text-xl font-telugu-sans text-secondary mb-6 md:mb-8 max-w-5xl mx-auto px-4 leading-relaxed">
             సనాతన ధర్మ సంప్రదాయాలను అనుసరించి వైదిక ఆధ్యాత్మిక సేవలను అందించే అనుభవజ్ఞులైన గురువు గారు
           </p>
           <div className="divider-sacred mx-auto w-32"></div>
@@ -20,14 +20,14 @@ const About = () => {
 
         {/* Main Content */}
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 xl:gap-16 items-center mb-16 md:mb-20">
             {/* Temple Image */}
             <div className="relative order-2 lg:order-1">
               <div className="relative overflow-hidden rounded-3xl shadow-2xl glow-divine">
                 <img 
                   src={guruTemple} 
                   alt="పవిత్ర దేవాలయ వాతావరణంలో ధ్యానం" 
-                  className="w-full h-[450px] sm:h-[500px] lg:h-[600px] xl:h-[700px] object-cover object-center"
+                  className="w-full h-[400px] sm:h-[450px] lg:h-[500px] xl:h-[550px] 2xl:h-[600px] object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
                 <div className="absolute bottom-6 left-6 right-6 sm:bottom-8 sm:left-8 sm:right-8 text-white">
@@ -38,12 +38,12 @@ const About = () => {
             </div>
 
             {/* Text Content */}
-            <div className="space-y-8 lg:space-y-10 order-1 lg:order-2">
-              <div className="space-y-6">
-                <h3 className="text-3xl lg:text-4xl font-bold text-primary font-telugu-serif">
+            <div className="space-y-6 md:space-y-8 xl:space-y-10 order-1 lg:order-2">
+              <div className="space-y-4 md:space-y-6">
+                <h3 className="text-2xl md:text-3xl xl:text-4xl font-bold text-primary font-telugu-serif">
                   ఆధ్యాత్మిక అనుభవం
                 </h3>
-                <h4 className="text-xl lg:text-2xl font-medium text-secondary">
+                <h4 className="text-lg md:text-xl xl:text-2xl font-medium text-secondary">
                   Spiritual Experience
                 </h4>
                 

@@ -68,28 +68,28 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen py-8 lg:py-12">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen py-8 md:py-12 xl:py-16">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         {/* Header */}
-        <div className="text-center mb-12 lg:mb-16">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-primary font-telugu-serif">
+        <div className="text-center mb-10 md:mb-12 xl:mb-16">
+          <h1 className="text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold mb-6 md:mb-8 text-primary font-telugu-serif">
             సంప్రదించండి
           </h1>
           <div className="divider-sacred mx-auto w-32"></div>
-          <p className="text-lg lg:text-xl text-muted-foreground max-w-4xl mx-auto font-telugu-sans mt-8">
+          <p className="text-base md:text-lg xl:text-xl text-muted-foreground max-w-4xl mx-auto font-telugu-sans mt-6 md:mt-8">
             మీ ఆధ్యాత్మిక సేవల అవసరాలకు సంబంధించి మమ్మల్ని సంప్రదించండి
           </p>
         </div>
 
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 xl:gap-12 items-stretch">
             {/* Contact Form */}
-            <div className="card-divine p-6 lg:p-8 flex flex-col flex-1">
-              <h3 className="text-2xl lg:text-3xl font-bold mb-6 text-primary font-telugu-serif">
+            <div className="card-divine p-5 md:p-6 xl:p-8 flex flex-col flex-1">
+              <h3 className="text-xl md:text-2xl xl:text-3xl font-bold mb-4 md:mb-6 text-primary font-telugu-serif">
                 మాకు సందేశం పంపండి
               </h3>
 
-              <form onSubmit={handleSubmit} className="space-y-6 flex-1 flex flex-col">
+              <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6 flex-1 flex flex-col">
                 <div>
                   <label className="block text-sm font-medium mb-2 font-telugu-sans">
                     పేరు *
@@ -159,9 +159,9 @@ const Contact = () => {
             </div>
 
             {/* Contact Information - Balanced Cards */}
-            <div className="flex flex-col gap-6 h-full">
+            <div className="flex flex-col gap-4 md:gap-6 h-full">
               {/* Phone Numbers */}
-              <div className="card-divine p-6 flex-1 flex flex-col">
+              <div className="card-divine p-4 md:p-6 flex-1 flex flex-col">
                 <div>
                   <div className="flex items-center mb-4">
                     <Phone className="h-6 w-6 text-primary mr-3" />
@@ -195,7 +195,7 @@ const Contact = () => {
               </div>
 
               {/* WhatsApp */}
-              <div className="card-divine p-6 flex-1 flex flex-col justify-between">
+              <div className="card-divine p-4 md:p-6 flex-1 flex flex-col justify-between">
                 <div>
                   <div className="flex items-center mb-4">
                     <MessageCircle className="h-6 w-6 text-green-600 mr-3" />
@@ -217,41 +217,41 @@ const Contact = () => {
               </div>
 
               {/* Service Hours */}
-              <div className="card-divine p-6 flex-1 flex flex-col">
+              <div className="card-divine p-4 md:p-6 flex-1 flex flex-col">
                 <div>
-                  <div className="flex items-center mb-4">
-                    <Clock className="h-6 w-6 text-primary mr-3" />
-                    <h3 className="text-xl font-semibold text-primary font-telugu-serif">
+                  <div className="flex items-center mb-3 md:mb-4">
+                    <Clock className="h-5 w-5 md:h-6 md:w-6 text-primary mr-3" />
+                    <h3 className="text-lg md:text-xl font-semibold text-primary font-telugu-serif">
                       సేవ సమయాలు
                     </h3>
                   </div>
-                  <div className="space-y-2 text-muted-foreground">
+                  <div className="space-y-1 md:space-y-2 text-sm md:text-base text-muted-foreground">
                     <p><span className="font-medium">సోమవారం - శనివారం:</span> 6:00 AM - 8:00 PM</p>
                     <p><span className="font-medium">ఆదివారం:</span> 6:00 AM - 6:00 PM</p>
-                    <p className="text-sm mt-3"><span className="font-medium">తాత్కాలిక సేవలు:</span> 24/7 అందుబాటులో</p>
+                    <p className="text-xs md:text-sm mt-2 md:mt-3"><span className="font-medium">తాత్కాలిక సేవలు:</span> 24/7 అందుబాటులో</p>
                   </div>
                 </div>
               </div>
 
               {/* Website */}
-              <div className="card-divine p-6 flex-1 flex flex-col justify-center min-h-[150px]">
+              <div className="card-divine p-4 md:p-6 flex-1 flex flex-col justify-center min-h-[120px] md:min-h-[140px]">
                 <div className="flex items-center mb-2">
-                  <Mail className="h-5 w-5 text-primary mr-3" />
-                  <h3 className="text-lg font-semibold text-primary font-telugu-serif">
+                  <Mail className="h-4 w-4 md:h-5 md:w-5 text-primary mr-3" />
+                  <h3 className="text-base md:text-lg font-semibold text-primary font-telugu-serif">
                     వెబ్‌సైట్
                   </h3>
                 </div>
-                <p className="text-muted-foreground text-sm">www.manapooja.in</p>
+                <p className="text-muted-foreground text-xs md:text-sm">www.manapooja.in</p>
               </div>
             </div>
           </div>
 
           {/* Service Areas */}
-          <div className="mt-12 lg:mt-16 text-center bg-gradient-temple rounded-2xl p-8 lg:p-10">
-            <h3 className="text-3xl lg:text-4xl font-bold mb-6 text-primary font-telugu-serif">
+          <div className="mt-10 md:mt-12 xl:mt-16 text-center bg-gradient-temple rounded-xl md:rounded-2xl p-6 md:p-8 xl:p-10">
+            <h3 className="text-2xl md:text-3xl xl:text-4xl font-bold mb-4 md:mb-6 text-primary font-telugu-serif">
               సేవా ప్రాంతాలు
             </h3>
-            <p className="text-lg lg:text-xl text-muted-foreground font-telugu-sans max-w-3xl mx-auto">
+            <p className="text-base md:text-lg xl:text-xl text-muted-foreground font-telugu-sans max-w-3xl mx-auto">
               మేము తెలంగాణ మరియు ఆంధ్రప్రదేశ్ అంతటా సేవలు అందిస్తాము
             </p>
           </div>

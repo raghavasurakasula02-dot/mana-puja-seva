@@ -24,25 +24,25 @@ const Services = () => {
   };
 
   return (
-    <div className="min-h-screen py-16 lg:py-24">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen py-12 md:py-16 xl:py-20">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         {/* Header */}
-        <div className="text-center mb-20">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-primary font-telugu-serif">
+        <div className="text-center mb-16 md:mb-20">
+          <h1 className="text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold mb-6 md:mb-8 text-primary font-telugu-serif">
             మా ఆధ్యాత్మిక సేవలు
           </h1>
-          <p className="text-xl lg:text-2xl font-telugu-sans text-secondary mb-6 max-w-5xl mx-auto">
+          <p className="text-lg md:text-xl xl:text-2xl font-telugu-sans text-secondary mb-4 md:mb-6 max-w-5xl mx-auto">
             సనాతన ధర్మ సంప్రదాయాలను అనుసరించి వైదిక విధానాలతో నిర్వహించబడే పవిత్ర సేవలు
           </p>
           <div className="divider-sacred mx-auto w-32"></div>
-          <p className="text-lg lg:text-xl text-muted-foreground max-w-4xl mx-auto font-telugu-sans mt-8">
+          <p className="text-base md:text-lg xl:text-xl text-muted-foreground max-w-4xl mx-auto font-telugu-sans mt-6 md:mt-8">
             మీ ఇంట్లో లేదా దేవాలయంలో పూర్ణ భక్తి శ్రద్ధలతో అన్ని వైదిక కార్యక్రమాలను నిర్వహిస్తాము
           </p>
         </div>
 
         {/* Homams Section */}
-        <section id="homams" className="mb-28">
-          <div className="flex flex-col lg:flex-row items-center mb-16 max-w-6xl mx-auto">
+        <section id="homams" className="mb-20 md:mb-28">
+          <div className="flex flex-col lg:flex-row items-center mb-12 md:mb-16 max-w-6xl mx-auto">
             <div className="relative w-24 h-24 lg:w-28 lg:h-28 mr-8 mb-6 lg:mb-0">
               <img 
                 src={traditionalHomam} 
@@ -62,7 +62,7 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 xl:gap-12 max-w-7xl mx-auto">
             {/* Ayushya Rudra Homam */}
             <div className="card-divine overflow-hidden group h-full">
               <div className="relative h-72 overflow-hidden">
