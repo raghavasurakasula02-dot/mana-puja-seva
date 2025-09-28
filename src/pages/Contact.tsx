@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, MessageCircle, Mail, MapPin, Clock } from 'lucide-react';
+import { Phone, MessageCircle, Mail, Clock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -16,12 +16,12 @@ const Contact = () => {
   });
 
   const services = [
-    'హోమాలు (Homams)',
-    'అభిషేకాలు (Abhishekams)',
-    'కళ్యాణాలు (Kalyanams)',
-    'వ్రతాలు (Vratams)',
-    'గృహప్రవేశం (Gruhapravesham)',
-    'Other Services'
+    'హోమాలు',
+    'అభిషేకాలు',
+    'కళ్యాణాలు',
+    'వ్రతాలు',
+    'గృహప్రవేశం',
+    'ఇతర సేవలు'
   ];
 
   const handleInputChange = (field: string, value: string) => {
@@ -34,21 +34,19 @@ const Contact = () => {
     if (!formData.name || !formData.email || !formData.service || !formData.message) {
       toast({
         title: "అన్ని ఫీల్డ్లు పూరించండి",
-        description: "Please fill all required fields",
         variant: "destructive"
       });
       return;
     }
 
-    // Create WhatsApp message
     const phoneNumber = "919989101037";
     const whatsappMessage = `నమస్తే గురువు గారు,
 
 పేరు: ${formData.name}
-Email: ${formData.email}
-Service: ${formData.service}
+ఇమెయిల్: ${formData.email}
+సేవ: ${formData.service}
 
-Message: ${formData.message}
+సందేశం: ${formData.message}
 
 దయచేసి నాకు మరింత సమాచారం అందించండి.`;
 
@@ -57,10 +55,8 @@ Message: ${formData.message}
 
     toast({
       title: "మీ సందేశం పంపబడింది",
-      description: "Your message has been sent via WhatsApp",
     });
 
-    // Reset form
     setFormData({ name: '', email: '', service: '', message: '' });
   };
 
@@ -79,9 +75,6 @@ Message: ${formData.message}
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-primary font-telugu-serif">
             సంప్రదించండి
           </h1>
-          <h2 className="text-3xl font-semibold text-secondary mb-4">
-            Contact Us
-          </h2>
           <div className="divider-sacred"></div>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto font-telugu-sans">
             మీ ఆధ్యాత్మిక సేవల అవసరాలకు సంబంధించి మమ్మల్ని సంప్రదించండి
@@ -95,44 +88,41 @@ Message: ${formData.message}
               <h3 className="text-2xl font-bold mb-6 text-primary font-telugu-serif">
                 మాకు సందేశం పంపండి
               </h3>
-              <h4 className="text-xl font-semibold mb-8 text-secondary">
-                Send Us a Message
-              </h4>
 
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label className="block text-sm font-medium mb-2 font-telugu-sans">
-                    పేరు / Name *
+                    పేరు *
                   </label>
                   <Input
                     type="text"
                     value={formData.name}
                     onChange={(e) => handleInputChange('name', e.target.value)}
-                    placeholder="మీ పూర్తి పేరు / Your full name"
+                    placeholder="మీ పూర్తి పేరు"
                     required
                   />
                 </div>
 
                 <div>
                   <label className="block text-sm font-medium mb-2 font-telugu-sans">
-                    ఇమెయిల్ / Email *
+                    ఇమెయిల్ *
                   </label>
                   <Input
                     type="email"
                     value={formData.email}
                     onChange={(e) => handleInputChange('email', e.target.value)}
-                    placeholder="your.email@example.com"
+                    placeholder="మీ ఇమెయిల్"
                     required
                   />
                 </div>
 
                 <div>
                   <label className="block text-sm font-medium mb-2 font-telugu-sans">
-                    సేవ / Service *
+                    సేవ *
                   </label>
                   <Select value={formData.service} onValueChange={(value) => handleInputChange('service', value)}>
                     <SelectTrigger>
-                      <SelectValue placeholder="సేవను ఎంచుకోండి / Select a service" />
+                      <SelectValue placeholder="సేవను ఎంచుకోండి" />
                     </SelectTrigger>
                     <SelectContent>
                       {services.map((service) => (
@@ -146,12 +136,12 @@ Message: ${formData.message}
 
                 <div>
                   <label className="block text-sm font-medium mb-2 font-telugu-sans">
-                    సందేశం / Message *
+                    సందేశం *
                   </label>
                   <Textarea
                     value={formData.message}
                     onChange={(e) => handleInputChange('message', e.target.value)}
-                    placeholder="మీ అవసరాలను వివరంగా రాయండి / Please describe your requirements in detail"
+                    placeholder="మీ అవసరాలను వివరంగా రాయండి"
                     rows={4}
                     required
                   />
@@ -166,7 +156,6 @@ Message: ${formData.message}
 
             {/* Contact Information */}
             <div className="space-y-8">
-              {/* Phone Numbers */}
               <div className="card-divine p-6">
                 <div className="flex items-center mb-4">
                   <Phone className="h-6 w-6 text-primary mr-3" />
@@ -174,7 +163,6 @@ Message: ${formData.message}
                     ఫోన్ నంబర్లు
                   </h3>
                 </div>
-                <h4 className="text-lg font-medium text-secondary mb-4">Phone Numbers</h4>
                 
                 <div className="space-y-3">
                   <a
@@ -184,7 +172,7 @@ Message: ${formData.message}
                     <Phone className="h-5 w-5 text-primary mr-3" />
                     <div>
                       <p className="font-semibold text-primary">+91 99891 01037</p>
-                      <p className="text-sm text-muted-foreground font-telugu-sans">ప्राথमिक संपर्क / Primary Contact</p>
+                      <p className="text-sm text-muted-foreground font-telugu-sans">ప్రాథమిక సంప్రదింపు</p>
                     </div>
                   </a>
                   
@@ -195,13 +183,12 @@ Message: ${formData.message}
                     <Phone className="h-5 w-5 text-secondary mr-3" />
                     <div>
                       <p className="font-semibold text-secondary">+91 88862 07347</p>
-                      <p className="text-sm text-muted-foreground font-telugu-sans">ప్రత్యామ్నాయ సంప్రదింపు / Alternative Contact</p>
+                      <p className="text-sm text-muted-foreground font-telugu-sans">ప్రత్యామ్నాయ సంప్రదింపు</p>
                     </div>
                   </a>
                 </div>
               </div>
 
-              {/* WhatsApp */}
               <div className="card-divine p-6">
                 <div className="flex items-center mb-4">
                   <MessageCircle className="h-6 w-6 text-green-600 mr-3" />
@@ -213,9 +200,6 @@ Message: ${formData.message}
                 <p className="text-muted-foreground mb-4 font-telugu-sans">
                   త్వరిత సమాధానం కోసం WhatsApp లో మాట్లాడండి
                 </p>
-                <p className="text-muted-foreground text-sm mb-4">
-                  Chat with us on WhatsApp for quick responses
-                </p>
                 
                 <Button onClick={handleWhatsAppClick} className="w-full bg-green-600 hover:bg-green-700 text-white">
                   <MessageCircle className="h-5 w-5 mr-2" />
@@ -223,7 +207,6 @@ Message: ${formData.message}
                 </Button>
               </div>
 
-              {/* Service Hours */}
               <div className="card-divine p-6">
                 <div className="flex items-center mb-4">
                   <Clock className="h-6 w-6 text-primary mr-3" />
@@ -231,18 +214,14 @@ Message: ${formData.message}
                     సేవ సమయాలు
                   </h3>
                 </div>
-                <h4 className="text-lg font-medium text-secondary mb-4">Service Hours</h4>
                 
                 <div className="space-y-2 text-muted-foreground">
                   <p><span className="font-medium">సోమవారం - శనివారం:</span> 6:00 AM - 8:00 PM</p>
                   <p><span className="font-medium">ఆదివారం:</span> 6:00 AM - 6:00 PM</p>
-                  <p className="text-sm mt-3">
-                    <span className="font-medium">Emergency Services:</span> Available 24/7
-                  </p>
+                  <p className="text-sm mt-3"><span className="font-medium">తాత్కాలిక సేవలు:</span> 24/7 అందుబాటులో</p>
                 </div>
               </div>
 
-              {/* Website */}
               <div className="card-divine p-6">
                 <div className="flex items-center mb-4">
                   <Mail className="h-6 w-6 text-primary mr-3" />
@@ -252,26 +231,19 @@ Message: ${formData.message}
                 </div>
                 
                 <p className="text-muted-foreground">
-                  <span className="font-medium">Website:</span> www.manapooja.in
+                  www.manapooja.in
                 </p>
               </div>
             </div>
           </div>
 
-          {/* Service Areas */}
           <div className="mt-16 text-center bg-gradient-temple rounded-xl p-8">
             <h3 className="text-2xl font-bold mb-4 text-primary font-telugu-serif">
               సేవా ప్రాంతాలు
             </h3>
-            <h4 className="text-xl font-semibold mb-6 text-secondary">
-              Service Areas
-            </h4>
             
             <p className="text-muted-foreground mb-4 font-telugu-sans">
               మేము తెలంగాణ మరియు ఆంధ్రప్రదేశ్ అంతటా సేవలు అందిస్తాము
-            </p>
-            <p className="text-muted-foreground">
-              We provide services across Telangana and Andhra Pradesh
             </p>
           </div>
         </div>
