@@ -1,0 +1,9 @@
+---
+deployment:
+  tasks:
+    # Define the absolute path to your live website folder (public_html)
+    - export DEPLOYPATH=/home4/manapooja/public_html/
+
+    # Copy all files and folders (recursively, -R) from the repository
+    - /bin/cp -R * $DEPLOYPATH
+    - /bin/cp -R .htaccess $DEPLOYPATH
