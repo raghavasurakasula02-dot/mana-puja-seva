@@ -84,9 +84,9 @@ const Contact = () => {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             {/* Contact Form */}
-            <div className="card-divine p-8 lg:p-10 h-full flex flex-col justify-between">
+            <div className="card-divine p-6 lg:p-8 h-full flex flex-col justify-between">
               <div>
-                <h3 className="text-2xl lg:text-3xl font-bold mb-8 text-primary font-telugu-serif">
+                <h3 className="text-2xl lg:text-3xl font-bold mb-6 text-primary font-telugu-serif">
                   మాకు సందేశం పంపండి
                 </h3>
 
@@ -230,14 +230,14 @@ const Contact = () => {
               </div>
 
               {/* Website */}
-              <div className="card-divine p-6 flex flex-col justify-between">
-                <div className="flex items-center mb-4">
-                  <Mail className="h-6 w-6 text-primary mr-3" />
-                  <h3 className="text-xl font-semibold text-primary font-telugu-serif">
+              <div className="card-divine p-4 flex flex-col justify-center">
+                <div className="flex items-center mb-2">
+                  <Mail className="h-5 w-5 text-primary mr-3" />
+                  <h3 className="text-lg font-semibold text-primary font-telugu-serif">
                     వెబ్‌సైట్
                   </h3>
                 </div>
-                <p className="text-muted-foreground">www.manapooja.in</p>
+                <p className="text-muted-foreground text-sm">www.manapooja.in</p>
               </div>
             </div>
           </div>
