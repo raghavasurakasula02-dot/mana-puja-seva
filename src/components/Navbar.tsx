@@ -51,17 +51,6 @@ const Navbar = () => {
                 )}
               </Link>
             ))}
-            
-            {/* Phone Numbers */}
-            <div className="flex items-center space-x-4 text-sm">
-              <a
-                href="tel:+919989101037"
-                className="flex items-center space-x-1 text-primary hover:text-primary-glow transition-colors"
-              >
-                <Phone className="h-4 w-4" />
-                <span className="font-medium">99891 01037</span>
-              </a>
-            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -93,22 +82,6 @@ const Navbar = () => {
                 {item.name}
               </Link>
             ))}
-            <div className="pt-2 border-t border-border mt-2">
-              <a
-                href="tel:+919989101037"
-                className="flex items-center space-x-2 px-3 py-2 text-primary hover:text-primary-glow transition-colors"
-              >
-                <Phone className="h-4 w-4" />
-                <span className="font-medium">99891 01037</span>
-              </a>
-              <a
-                href="tel:+918886207347"
-                className="flex items-center space-x-2 px-3 py-2 text-primary hover:text-primary-glow transition-colors"
-              >
-                <Phone className="h-4 w-4" />
-                <span className="font-medium">88862 07347</span>
-              </a>
-            </div>
           </div>
         )}
       </div>
