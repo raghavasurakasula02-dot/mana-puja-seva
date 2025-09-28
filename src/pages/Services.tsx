@@ -24,60 +24,60 @@ const Services = () => {
   };
 
   return (
-    <div className="min-h-screen py-16">
-      <div className="container mx-auto px-4">
+    <div className="min-h-screen py-16 lg:py-24">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-primary font-telugu-serif">
+        <div className="text-center mb-20">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-primary font-telugu-serif">
             మా ఆధ్యాత్మిక సేవలు
           </h1>
-          <p className="text-xl font-telugu-sans text-secondary mb-4 max-w-4xl mx-auto">
+          <p className="text-xl lg:text-2xl font-telugu-sans text-secondary mb-6 max-w-5xl mx-auto">
             సనాతన ధర్మ సంప్రదాయాలను అనుసరించి వైదిక విధానాలతో నిర్వహించబడే పవిత్ర సేవలు
           </p>
-          <div className="divider-sacred"></div>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto font-telugu-sans">
+          <div className="divider-sacred mx-auto w-32"></div>
+          <p className="text-lg lg:text-xl text-muted-foreground max-w-4xl mx-auto font-telugu-sans mt-8">
             మీ ఇంట్లో లేదా దేవాలయంలో పూర్ణ భక్తి శ్రద్ధలతో అన్ని వైదిక కార్యక్రమాలను నిర్వహిస్తాము
           </p>
         </div>
 
         {/* Homams Section */}
-        <section id="homams" className="mb-20">
-          <div className="flex flex-col md:flex-row items-center mb-12">
-            <div className="relative w-20 h-20 mr-6 mb-4 md:mb-0">
+        <section id="homams" className="mb-28">
+          <div className="flex flex-col lg:flex-row items-center mb-16 max-w-6xl mx-auto">
+            <div className="relative w-24 h-24 lg:w-28 lg:h-28 mr-8 mb-6 lg:mb-0">
               <img 
                 src={traditionalHomam} 
                 alt="Homams అగ్ని కార్యక్రమాలు" 
-                className="w-full h-full object-cover rounded-full border-4 border-primary shadow-lg"
+                className="w-full h-full object-cover rounded-full border-4 border-primary shadow-xl"
               />
-              <div className="absolute inset-0 bg-primary/20 rounded-full flex items-center justify-center">
-                <Flame className="h-10 w-10 text-white" />
+              <div className="absolute inset-0 bg-primary/30 rounded-full flex items-center justify-center">
+                <Flame className="h-12 w-12 lg:h-14 lg:w-14 text-white" />
               </div>
             </div>
-            <div className="text-center md:text-left">
-              <h2 className="text-4xl font-bold text-primary font-telugu-serif mb-2">హోమాలు</h2>
-              <p className="text-xl text-secondary font-telugu-sans mb-2">అగ్ని దేవుడికి అర్పించే పవిత్ర వైదిక కార్యక్రమాలు</p>
-              <p className="text-muted-foreground font-telugu-sans">
+            <div className="text-center lg:text-left">
+              <h2 className="text-4xl lg:text-5xl font-bold text-primary font-telugu-serif mb-4">హోమాలు</h2>
+              <p className="text-xl lg:text-2xl text-secondary font-telugu-sans mb-4">అగ్ని దేవుడికి అర్పించే పవిత్ర వైదిక కార్యక్రమాలు</p>
+              <p className="text-lg text-muted-foreground font-telugu-sans max-w-2xl">
                 వేద మంత్రాలతో అగ్ని హోత్రం చేసి దైవ కృపను పొందే అత్యంత పవిత్రమైన సేవలు
               </p>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 max-w-7xl mx-auto">
             {/* Ayushya Rudra Homam */}
-            <div className="card-divine overflow-hidden group">
-              <div className="relative h-56 overflow-hidden">
+            <div className="card-divine overflow-hidden group h-full">
+              <div className="relative h-72 overflow-hidden">
                 <img 
                   src={ayushyaRudraHomam} 
                   alt="ఆయుష్య రుద్ర హోమం - దీర్ఘాయుష్షు కోసం" 
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-                <div className="absolute bottom-4 left-4">
-                  <h4 className="text-2xl font-bold text-white font-telugu-serif">ఆయుష్య రుద్ర హోమం</h4>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+                <div className="absolute bottom-6 left-6 right-6">
+                  <h4 className="text-2xl lg:text-3xl font-bold text-white font-telugu-serif">ఆయుష్య రుద్ర హోమం</h4>
                 </div>
               </div>
-              <div className="p-6">
-                <h5 className="text-lg font-medium text-secondary mb-4">దీర్ఘాయుష్షు మరియు ఆరోగ్య కోసం అత్యంత శక్తివంతమైన హోమం</h5>
+              <div className="p-8">
+                <h5 className="text-lg lg:text-xl font-semibold text-secondary mb-6">దీర్ఘాయుష్షు మరియు ఆరోగ్య కోసం అత్యంత శక్తివంతమైన హోమం</h5>
                 
                 <div className="space-y-4 font-telugu-sans">
                   <p className="text-muted-foreground leading-relaxed">

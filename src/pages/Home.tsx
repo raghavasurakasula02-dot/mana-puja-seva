@@ -63,55 +63,55 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center py-16">
-        <div className="container mx-auto px-4">
-         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center max-w-7xl mx-auto">
+      <section className="relative min-h-screen flex items-center justify-center py-12 lg:py-16">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center max-w-7xl mx-auto">
             {/* Left Content */}
-            <div className="text-center lg:text-left space-y-6 lg:space-y-8">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-primary font-telugu-serif animate-fade-in leading-tight">
+            <div className="text-center lg:text-left space-y-6 lg:space-y-8 order-2 lg:order-1">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-primary font-telugu-serif animate-fade-in leading-tight">
                 మన పూజ
               </h1>
               
               <div className="space-y-4 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-                <p className="text-lg sm:text-xl lg:text-2xl text-secondary font-telugu-sans leading-relaxed">
+                <p className="text-lg sm:text-xl lg:text-2xl xl:text-3xl text-secondary font-telugu-sans leading-relaxed">
                   సనాతన ధర్మ సంప్రదాయాలను అనుసరించి
                 </p>
-                <p className="text-base sm:text-lg lg:text-xl text-muted-foreground font-telugu-sans leading-relaxed">
+                <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-muted-foreground font-telugu-sans leading-relaxed">
                   పవిత్ర వైదిక ఆధ్యాత్మిక సేవలు
                 </p>
               </div>
               
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-6 animate-fade-in" style={{ animationDelay: '0.4s' }}>
                 <button
                   onClick={handleWhatsAppClick}
-                  className="btn-divine flex items-center justify-center gap-2 px-6 py-3 text-sm sm:text-base"
+                  className="btn-divine flex items-center justify-center gap-3 px-8 py-4 text-base sm:text-lg font-medium"
                 >
-                  <MessageCircle className="h-4 w-4 sm:h-5 sm:w-5" />
+                  <MessageCircle className="h-5 w-5" />
                   గురువు గారితో మాట్లాడండి
                 </button>
                 
                 <a
                   href="tel:+919989101037"
-                  className="btn-sacred flex items-center justify-center gap-2 px-6 py-3 text-sm sm:text-base"
+                  className="btn-sacred flex items-center justify-center gap-3 px-8 py-4 text-base sm:text-lg font-medium"
                 >
-                  <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
+                  <Phone className="h-5 w-5" />
                   ఫోన్ చేయండి
                 </a>
               </div>
             </div>
             
             {/* Right Image */}
-            <div className="relative animate-fade-in order-first lg:order-last" style={{ animationDelay: '0.3s' }}>
-              <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+            <div className="relative animate-fade-in order-1 lg:order-2" style={{ animationDelay: '0.3s' }}>
+              <div className="relative overflow-hidden rounded-3xl shadow-2xl glow-divine">
                 <img 
                   src={guruTemple} 
                   alt="గురువు గారు పవిత్ర ఆలయంలో ధ్యానంలో" 
-                  className="w-full h-[350px] sm:h-[450px] lg:h-[500px] object-cover"
+                  className="w-full h-[400px] sm:h-[500px] lg:h-[600px] xl:h-[700px] object-cover object-center"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
                 <div className="absolute bottom-6 left-6 right-6 text-white">
-                  <h3 className="text-xl sm:text-2xl font-bold font-telugu-serif mb-2">మా గురువు గారు</h3>
-                  <p className="text-base sm:text-lg opacity-90 font-telugu-sans">పవిత్ర ఆలయంలో ఆధ్యాత్మిక సేవలు</p>
+                  <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold font-telugu-serif mb-3">మా గురువు గారు</h3>
+                  <p className="text-base sm:text-lg lg:text-xl opacity-95 font-telugu-sans">పవిత్ర ఆలయంలో ఆధ్యాత్మిక సేవలు</p>
                 </div>
               </div>
             </div>
@@ -120,16 +120,16 @@ const Home = () => {
       </section>
 
       {/* Welcome Section */}
-      <section className="py-16 bg-gradient-temple">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary font-telugu-serif">
+      <section className="py-16 lg:py-24 bg-gradient-temple">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-primary font-telugu-serif">
             స్వాగతం మన పూజకు
           </h2>
-          <p className="text-xl font-telugu-sans text-secondary mb-8">
+          <p className="text-xl lg:text-2xl font-telugu-sans text-secondary mb-12 max-w-4xl mx-auto">
             దైవ కృపను పొందడానికి మీకు అవసరమైన అన్ని ఆధ్యాత్మిక సేవలు
           </p>
           
-          <div className="max-w-4xl mx-auto space-y-6 text-lg leading-relaxed">
+          <div className="max-w-5xl mx-auto space-y-8 text-lg lg:text-xl leading-relaxed">
             <p className="font-telugu-sans text-center">
               గురువు గారి అనుభవం మరియు వైదిక జ్ఞానంతో సనాతన ధర్మ సంప్రదాయాలను అనుసరించి 
               అన్ని రకాల హిందూ ఆధ్యాత్మిక సేవలను అందిస్తున్నాము. 
@@ -145,57 +145,57 @@ const Home = () => {
       </section>
 
       {/* Services Grid */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary font-telugu-serif">
+      <section className="py-16 lg:py-24">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-primary font-telugu-serif">
               మా సేవలు
             </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto font-telugu-sans mb-6">
+            <p className="text-lg lg:text-xl text-muted-foreground max-w-4xl mx-auto font-telugu-sans mb-8">
               సనాతన ధర్మ సంప్రదాయాలను అనుసరించి, వైదిక విధానాలతో నిర్వహించబడే పవిత్ర సేవలు
             </p>
-            <div className="divider-sacred"></div>
+            <div className="divider-sacred mx-auto w-32"></div>
           </div>
 
           {/* Main Services Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 max-w-7xl mx-auto mb-20">
             {services.map((service, index) => (
               <div 
                 key={index} 
-                className="card-divine overflow-hidden cursor-pointer group transform hover:scale-105 transition-all duration-300 animate-scale-divine" 
+                className="card-divine overflow-hidden cursor-pointer group transform hover:scale-[1.02] transition-all duration-500 animate-scale-divine h-full" 
                 style={{ animationDelay: `${index * 0.1}s` }}
                 onClick={() => handleServiceClick(service.href)}
               >
-                <div className="relative h-56 overflow-hidden">
+                <div className="relative h-72 lg:h-80 overflow-hidden">
                   <img 
                     src={service.image} 
                     alt={`${service.title} spiritual service`}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
-                  <div className="absolute top-4 left-4">
-                    <div className="bg-primary/90 p-3 rounded-full glow-divine">
-                      <service.icon className="h-6 w-6 text-white" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+                  <div className="absolute top-6 left-6">
+                    <div className="bg-primary/95 p-4 rounded-full glow-divine">
+                      <service.icon className="h-7 w-7 text-white" />
                     </div>
                   </div>
-                  <div className="absolute bottom-4 left-4 right-4">
-                    <h3 className="text-2xl font-bold text-white mb-1 font-telugu-serif">
+                  <div className="absolute bottom-6 left-6 right-6">
+                    <h3 className="text-2xl lg:text-3xl font-bold text-white mb-2 font-telugu-serif">
                       {service.title}
                     </h3>
                   </div>
                 </div>
                 
-                <div className="p-6">
-                  <p className="text-muted-foreground mb-4 font-telugu-sans leading-relaxed">
+                <div className="p-8">
+                  <p className="text-muted-foreground mb-6 font-telugu-sans leading-relaxed text-base lg:text-lg">
                     {service.description}
                   </p>
                   
                   <div className="flex items-center justify-between">
-                    <span className="text-primary font-medium hover:text-primary-glow transition-colors font-telugu-sans">
+                    <span className="text-primary font-semibold hover:text-primary-glow transition-colors font-telugu-sans text-lg">
                       వివరాలు చూడండి →
                     </span>
-                    <div className="bg-gradient-divine p-2 rounded-full">
-                      <service.icon className="h-4 w-4 text-white" />
+                    <div className="bg-gradient-divine p-3 rounded-full">
+                      <service.icon className="h-5 w-5 text-white" />
                     </div>
                   </div>
                 </div>
@@ -204,10 +204,10 @@ const Home = () => {
           </div>
 
           {/* View All Services Button */}
-          <div className="text-center mt-12">
+          <div className="text-center">
             <button
               onClick={() => handleServiceClick('/services')}
-              className="btn-divine px-8 py-4 text-lg"
+              className="btn-divine px-12 py-5 text-lg lg:text-xl font-semibold"
             >
               అన్ని సేవలు చూడండి
             </button>
@@ -216,32 +216,31 @@ const Home = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-gradient-sacred text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 font-telugu-serif">
+      <section className="py-20 lg:py-28 bg-gradient-sacred text-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 font-telugu-serif">
             ఆధ్యాత్మిక మార్గదర్శకత్వం కోసం సంప్రదించండి
           </h2>
-          <p className="text-xl font-telugu-sans mb-8">
+          <p className="text-xl lg:text-2xl font-telugu-sans mb-12 max-w-4xl mx-auto">
             మీ కుటుంబానికి దైవ దీవెనలు మరియు శుభాలు కలుగాలని కోరుకుంటున్నాము
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col lg:flex-row gap-8 justify-center items-center max-w-4xl mx-auto">
             <button
               onClick={handleWhatsAppClick}
-              className="bg-white text-primary hover:bg-primary-glow hover:text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center space-x-2 shadow-lg hover:shadow-xl"
+              className="bg-white text-primary hover:bg-primary hover:text-white px-10 py-5 rounded-xl font-semibold transition-all duration-300 flex items-center space-x-3 shadow-xl hover:shadow-2xl text-lg group"
             >
-              <MessageCircle className="h-5 w-5" />
+              <MessageCircle className="h-6 w-6 group-hover:scale-110 transition-transform" />
               <span className="font-telugu-sans">WhatsApp లో మాట్లాడండి</span>
             </button>
             
-            <div className="flex flex-col sm:flex-row gap-2 text-lg font-medium">
-              <a href="tel:+919989101037" className="hover:text-accent transition-colors flex items-center space-x-1">
-                <Phone className="h-4 w-4" />
+            <div className="flex flex-col sm:flex-row gap-4 text-xl font-medium">
+              <a href="tel:+919989101037" className="hover:text-accent transition-colors flex items-center justify-center space-x-2 bg-white/10 px-6 py-3 rounded-lg backdrop-blur-sm">
+                <Phone className="h-5 w-5" />
                 <span>99891 01037</span>
               </a>
-              <span className="hidden sm:inline">•</span>
-              <a href="tel:+918886207347" className="hover:text-accent transition-colors flex items-center space-x-1">
-                <Phone className="h-4 w-4" />
+              <a href="tel:+918886207347" className="hover:text-accent transition-colors flex items-center justify-center space-x-2 bg-white/10 px-6 py-3 rounded-lg backdrop-blur-sm">
+                <Phone className="h-5 w-5" />
                 <span>88862 07347</span>
               </a>
             </div>

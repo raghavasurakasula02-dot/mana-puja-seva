@@ -68,25 +68,25 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen py-16">
-      <div className="container mx-auto px-4">
+    <div className="min-h-screen py-16 lg:py-24">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-primary font-telugu-serif">
+        <div className="text-center mb-20">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-primary font-telugu-serif">
             సంప్రదించండి
           </h1>
-          <div className="divider-sacred mx-auto w-24"></div>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto font-telugu-sans">
+          <div className="divider-sacred mx-auto w-32"></div>
+          <p className="text-lg lg:text-xl text-muted-foreground max-w-4xl mx-auto font-telugu-sans mt-8">
             మీ ఆధ్యాత్మిక సేవల అవసరాలకు సంబంధించి మమ్మల్ని సంప్రదించండి
           </p>
         </div>
 
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             {/* Contact Form */}
-            <div className="card-divine p-8 h-full flex flex-col justify-between">
+            <div className="card-divine p-8 lg:p-10 h-full flex flex-col justify-between">
               <div>
-                <h3 className="text-2xl font-bold mb-6 text-primary font-telugu-serif">
+                <h3 className="text-2xl lg:text-3xl font-bold mb-8 text-primary font-telugu-serif">
                   మాకు సందేశం పంపండి
                 </h3>
 
@@ -157,36 +157,36 @@ const Contact = () => {
             </div>
 
             {/* Contact Information */}
-            <div className="grid grid-rows-4 gap-6 h-full">
+            <div className="grid grid-rows-4 gap-8 h-full">
               {/* Phone Numbers */}
-              <div className="card-divine p-6 flex flex-col justify-between">
+              <div className="card-divine p-8 flex flex-col justify-between">
                 <div>
-                  <div className="flex items-center mb-4">
-                    <Phone className="h-6 w-6 text-primary mr-3" />
-                    <h3 className="text-xl font-semibold text-primary font-telugu-serif">
+                  <div className="flex items-center mb-6">
+                    <Phone className="h-7 w-7 text-primary mr-4" />
+                    <h3 className="text-xl lg:text-2xl font-semibold text-primary font-telugu-serif">
                       ఫోన్ నంబర్లు
                     </h3>
                   </div>
-                  <div className="space-y-3">
+                  <div className="space-y-4">
                     <a
                       href="tel:+919989101037"
-                      className="flex items-center p-3 bg-primary/5 rounded-lg hover:bg-primary/10 transition-colors"
+                      className="flex items-center p-4 bg-primary/5 rounded-xl hover:bg-primary/10 transition-colors group"
                     >
-                      <Phone className="h-5 w-5 text-primary mr-3" />
+                      <Phone className="h-6 w-6 text-primary mr-4 group-hover:scale-110 transition-transform" />
                       <div>
-                        <p className="font-semibold text-primary">+91 99891 01037</p>
-                        <p className="text-sm text-muted-foreground font-telugu-sans">ప్రాథమిక సంప్రదింపు</p>
+                        <p className="font-semibold text-primary text-lg">+91 99891 01037</p>
+                        <p className="text-muted-foreground font-telugu-sans">ప్రాథమిక సంప్రదింపు</p>
                       </div>
                     </a>
 
                     <a
                       href="tel:+918886207347"
-                      className="flex items-center p-3 bg-secondary/5 rounded-lg hover:bg-secondary/10 transition-colors"
+                      className="flex items-center p-4 bg-secondary/5 rounded-xl hover:bg-secondary/10 transition-colors group"
                     >
-                      <Phone className="h-5 w-5 text-secondary mr-3" />
+                      <Phone className="h-6 w-6 text-secondary mr-4 group-hover:scale-110 transition-transform" />
                       <div>
-                        <p className="font-semibold text-secondary">+91 88862 07347</p>
-                        <p className="text-sm text-muted-foreground font-telugu-sans">ప్రత్యామ్నాయ సంప్రదింపు</p>
+                        <p className="font-semibold text-secondary text-lg">+91 88862 07347</p>
+                        <p className="text-muted-foreground font-telugu-sans">ప్రత్యామ్నాయ సంప్రదింపు</p>
                       </div>
                     </a>
                   </div>
@@ -243,11 +243,11 @@ const Contact = () => {
           </div>
 
           {/* Service Areas */}
-          <div className="mt-16 text-center bg-gradient-temple rounded-xl p-8">
-            <h3 className="text-2xl font-bold mb-4 text-primary font-telugu-serif">
+          <div className="mt-20 text-center bg-gradient-temple rounded-2xl p-12">
+            <h3 className="text-3xl lg:text-4xl font-bold mb-6 text-primary font-telugu-serif">
               సేవా ప్రాంతాలు
             </h3>
-            <p className="text-muted-foreground mb-4 font-telugu-sans">
+            <p className="text-lg lg:text-xl text-muted-foreground font-telugu-sans max-w-3xl mx-auto">
               మేము తెలంగాణ మరియు ఆంధ్రప్రదేశ్ అంతటా సేవలు అందిస్తాము
             </p>
           </div>

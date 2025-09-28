@@ -5,45 +5,45 @@ import guruTemple from '@/assets/guru-temple-meditation.jpg';
 
 const About = () => {
   return (
-    <div className="min-h-screen py-8 sm:py-12 lg:py-16">
+    <div className="min-h-screen py-12 lg:py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-12 lg:mb-16">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-primary font-telugu-serif">
+        <div className="text-center mb-16 lg:mb-24">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 lg:mb-8 text-primary font-telugu-serif">
             గురువు గారి గురించి
           </h1>
-          <p className="text-lg sm:text-xl font-telugu-sans text-secondary mb-4 max-w-4xl mx-auto px-4">
+          <p className="text-lg sm:text-xl lg:text-2xl font-telugu-sans text-secondary mb-8 max-w-5xl mx-auto px-4 leading-relaxed">
             సనాతన ధర్మ సంప్రదాయాలను అనుసరించి వైదిక ఆధ్యాత్మిక సేవలను అందించే అనుభవజ్ఞులైన గురువు గారు
           </p>
-          <div className="divider-sacred"></div>
+          <div className="divider-sacred mx-auto w-32"></div>
         </div>
 
         {/* Main Content */}
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-16">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-20">
             {/* Temple Image */}
             <div className="relative order-2 lg:order-1">
-              <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+              <div className="relative overflow-hidden rounded-3xl shadow-2xl glow-divine">
                 <img 
                   src={guruTemple} 
                   alt="పవిత్ర దేవాలయ వాతావరణంలో ధ్యానం" 
-                  className="w-full h-[400px] sm:h-[450px] lg:h-[500px] object-cover object-center"
+                  className="w-full h-[450px] sm:h-[500px] lg:h-[600px] xl:h-[700px] object-cover object-center"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 text-white">
-                  <h3 className="text-xl sm:text-2xl font-bold font-telugu-serif mb-2">పవిత్ర ధ్యాన స్థలం</h3>
-                  <p className="text-sm opacity-90">15+ సంవత్సరాల అనుభవంతో</p>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                <div className="absolute bottom-6 left-6 right-6 sm:bottom-8 sm:left-8 sm:right-8 text-white">
+                  <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-telugu-serif mb-3">పవిత్ర ధ్యాన స్థలం</h3>
+                  <p className="text-base sm:text-lg lg:text-xl opacity-95">15+ సంవత్సరాల అనుభవంతో</p>
                 </div>
               </div>
             </div>
 
             {/* Text Content */}
-            <div className="space-y-6 order-1 lg:order-2">
-              <div className="space-y-4">
-                <h3 className="text-2xl font-semibold text-primary font-telugu-serif">
+            <div className="space-y-8 lg:space-y-10 order-1 lg:order-2">
+              <div className="space-y-6">
+                <h3 className="text-3xl lg:text-4xl font-bold text-primary font-telugu-serif">
                   ఆధ్యాత్మిక అనుభవం
                 </h3>
-                <h4 className="text-xl font-medium text-secondary">
+                <h4 className="text-xl lg:text-2xl font-medium text-secondary">
                   Spiritual Experience
                 </h4>
                 
@@ -68,21 +68,21 @@ const About = () => {
                   He is expert in understanding devotees' spiritual needs and presenting their wishes before the divine.
                 </p>
                 
-                <div className="mt-6 p-4 bg-primary/5 rounded-lg border-l-4 border-primary">
-                  <p className="text-primary font-medium font-telugu-serif mb-2">
+                <div className="mt-8 p-6 lg:p-8 bg-primary/5 rounded-xl border-l-4 border-primary">
+                  <p className="text-primary font-semibold font-telugu-serif mb-3 text-lg lg:text-xl">
                     "సర్వే భవన్తు సుఖినః సర్వే సన్తు నిరామయాః"
                   </p>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     Let everyone be happy, let everyone be free from disease - Our guiding principle
                   </p>
                 </div>
               </div>
 
-              <div className="space-y-4">
-                <h3 className="text-2xl font-semibold text-primary font-telugu-serif">
+              <div className="space-y-6">
+                <h3 className="text-3xl lg:text-4xl font-bold text-primary font-telugu-serif">
                   మా లక్ష్యం
                 </h3>
-                <h4 className="text-xl font-medium text-secondary">
+                <h4 className="text-xl lg:text-2xl font-medium text-secondary">
                   Our Mission
                 </h4>
                 
