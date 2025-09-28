@@ -68,10 +68,10 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen py-16 lg:py-24">
+    <div className="min-h-screen py-8 lg:py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-12 lg:mb-16">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-primary font-telugu-serif">
             సంప్రదించండి
           </h1>
@@ -81,8 +81,8 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Contact Form */}
             <div className="card-divine p-6 lg:p-8 h-full flex flex-col justify-between">
               <div>
@@ -157,7 +157,7 @@ const Contact = () => {
             </div>
 
             {/* Contact Information */}
-            <div className="grid grid-rows-4 gap-8 h-full">
+            <div className="grid grid-rows-4 gap-6 h-full">
               {/* Phone Numbers */}
               <div className="card-divine p-8 flex flex-col justify-between">
                 <div>
@@ -243,7 +243,7 @@ const Contact = () => {
           </div>
 
           {/* Service Areas */}
-          <div className="mt-20 text-center bg-gradient-temple rounded-2xl p-12">
+          <div className="mt-12 lg:mt-16 text-center bg-gradient-temple rounded-2xl p-8 lg:p-10">
             <h3 className="text-3xl lg:text-4xl font-bold mb-6 text-primary font-telugu-serif">
               సేవా ప్రాంతాలు
             </h3>
