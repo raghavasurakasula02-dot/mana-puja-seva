@@ -3,7 +3,13 @@ deployment:
   tasks:
     # Define the absolute path to your live website folder (public_html)
     - export DEPLOYPATH=/home4/manapooja/public_html/
-
-    # Copy all files and folders (recursively, -R) from the repository
-    - /bin/cp -R * $DEPLOYPATH
-    - /bin/cp -R .htaccess $DEPLOYPATH
+    
+    # Install dependencies and build the project
+    - npm install
+    - npm run build
+    
+    # Copy built files from dist folder to public_html
+    - /bin/cp -R dist/* $DEPLOYPATH
+    
+    # Copy .htaccess if it exists for React Router support
+    - /bin/cp .htaccess $DEPLOYPATH 2>/dev/null || true
