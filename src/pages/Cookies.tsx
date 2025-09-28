@@ -21,7 +21,7 @@ const Cookies = () => {
           </h1>
           <div className="divider-sacred"></div>
           <p className="text-muted-foreground">
-            Last updated: December 2024
+            Last updated: September 2025
           </p>
         </div>
 
