@@ -20,14 +20,14 @@ const About = () => {
 
         {/* Main Content */}
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 xl:gap-16 items-center mb-16 md:mb-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 xl:gap-16 items-start mb-16 md:mb-20">
             {/* Temple Image */}
             <div className="relative order-2 lg:order-1">
               <div className="relative overflow-hidden rounded-3xl shadow-2xl glow-divine">
                 <img 
                   src={guruTemple} 
                   alt="పవిత్ర దేవాలయ వాతావరణంలో ధ్యానం" 
-                  className="w-full h-[400px] sm:h-[450px] lg:h-[500px] xl:h-[550px] 2xl:h-[600px] object-cover object-center"
+                  className="w-full h-[400px] sm:h-[450px] lg:h-[480px] xl:h-[520px] object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
                 <div className="absolute bottom-6 left-6 right-6 sm:bottom-8 sm:left-8 sm:right-8 text-white">
@@ -119,17 +119,17 @@ const About = () => {
           </div>
 
           {/* Temple Ambiance Image */}
-          <div className="mb-16">
+          <div className="mb-16 md:mb-20">
             <div className="relative overflow-hidden rounded-2xl shadow-2xl">
               <img 
                 src={templeImage} 
                 alt="పవిత్ర దేవాలయ వాతావరణం" 
-                className="w-full h-48 sm:h-56 md:h-64 lg:h-72 object-cover object-center"
+                className="w-full h-56 sm:h-64 md:h-72 lg:h-80 xl:h-96 object-cover object-center"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent"></div>
-              <div className="absolute left-4 sm:left-6 lg:left-8 top-1/2 transform -translate-y-1/2 text-white max-w-xs sm:max-w-md">
-                <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold font-telugu-serif mb-2">పవిత్ర వాతావరణం</h3>
-                <p className="text-sm sm:text-base lg:text-lg">దైవిక శక్తులు నివసించే పవిత్ర స్థలం</p>
+              <div className="absolute left-6 sm:left-8 lg:left-12 top-1/2 transform -translate-y-1/2 text-white max-w-sm sm:max-w-md lg:max-w-lg">
+                <h3 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold font-telugu-serif mb-3 lg:mb-4">పవిత్ర వాతావరణం</h3>
+                <p className="text-base sm:text-lg lg:text-xl xl:text-2xl">దైవిక శక్తులు నివసించే పవిత్ర స్థలం</p>
               </div>
             </div>
           </div>

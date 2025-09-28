@@ -64,7 +64,7 @@ const Services = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 xl:gap-12 max-w-7xl mx-auto">
             {/* Ayushya Rudra Homam */}
-            <div className="card-divine overflow-hidden group h-full">
+            <div className="card-divine overflow-hidden group flex flex-col h-full">
               <div className="relative h-72 overflow-hidden">
                 <img 
                   src={ayushyaRudraHomam} 
@@ -76,10 +76,10 @@ const Services = () => {
                   <h4 className="text-2xl lg:text-3xl font-bold text-white font-telugu-serif">ఆయుష్య రుద్ర హోమం</h4>
                 </div>
               </div>
-              <div className="p-8">
-                <h5 className="text-lg lg:text-xl font-semibold text-secondary mb-6">దీర్ఘాయుష్షు మరియు ఆరోగ్య కోసం అత్యంత శక్తివంతమైన హోమం</h5>
+              <div className="p-6 flex-1 flex flex-col">
+                <h5 className="text-lg lg:text-xl font-semibold text-secondary mb-4">దీర్ఘాయుష్షు మరియు ఆరోగ్య కోసం అత్యంత శక్తివంతమైన హోమం</h5>
                 
-                <div className="space-y-4 font-telugu-sans">
+                <div className="space-y-4 font-telugu-sans flex-1">
                   <p className="text-muted-foreground leading-relaxed">
                     భగవాన్ శివుని రుద్ర రూపానికి సమర్పించబడే అత్యంత పవిత్రమైన హోమం. 
                     రుద్రం చమకం పఠనంతో 121 ఆహుతులతో నిర్వహించబడుతుంది. 
@@ -118,8 +118,8 @@ const Services = () => {
             </div>
 
             {/* Chandi Homam */}
-            <div className="card-divine overflow-hidden group">
-              <div className="relative h-56 overflow-hidden">
+            <div className="card-divine overflow-hidden group flex flex-col h-full">
+              <div className="relative h-72 overflow-hidden">
                 <img 
                   src={chandiHomam} 
                   alt="చండీ హోమం - దుర్గా సప్తశతి 700 శ్లోకాలు" 
@@ -130,10 +130,10 @@ const Services = () => {
                   <h4 className="text-2xl font-bold text-white font-telugu-serif">చండీ హోమం</h4>
                 </div>
               </div>
-              <div className="p-6">
+              <div className="p-6 flex-1 flex flex-col">
                 <h5 className="text-lg font-medium text-secondary mb-4">దుర్గా సప్తశతి 700 శ్లోకాలతో అత్యంత శక్తివంతమైన హోమం</h5>
                 
-                <div className="space-y-4 font-telugu-sans">
+                <div className="space-y-4 font-telugu-sans flex-1">
                   <p className="text-muted-foreground leading-relaxed">
                     మహిషాసుర మర్దిని దేవి దుర్గ యొక్క దైవిక శక్తిని ఆవాహన చేసే అత్యంత పవిత్రమైన హోమం. 
                     దుర్గా సప్తశతిలోని 700 శ్లోకాలను పఠిస్తూ నిర్వహించబడుతుంది. 
@@ -171,8 +171,8 @@ const Services = () => {
             </div>
 
             {/* Ganapati Homam */}
-            <div className="card-divine overflow-hidden group">
-              <div className="relative h-56 overflow-hidden">
+            <div className="card-divine overflow-hidden group flex flex-col h-full">
+              <div className="relative h-72 overflow-hidden">
                 <img 
                   src={ganapatiHomam} 
                   alt="మహా గణపతి హోమం - విఘ్న నివారణ" 
@@ -183,10 +183,10 @@ const Services = () => {
                   <h4 className="text-2xl font-bold text-white font-telugu-serif">మహా గణపతి హోమం</h4>
                 </div>
               </div>
-              <div className="p-6">
+              <div className="p-6 flex-1 flex flex-col">
                 <h5 className="text-lg font-medium text-secondary mb-4">విఘ్నేశ్వరుడికి సమర్పించే విఘ్న నివారణ హోమం</h5>
                 
-                <div className="space-y-4 font-telugu-sans">
+                <div className="space-y-4 font-telugu-sans flex-1">
                   <p className="text-muted-foreground leading-relaxed">
                     అన్ని విఘ్నాలను తొలగించే విఘ్నేశ్వరుడైన లార్డ్ గణేశకు సమర్పించబడే అత్యంత ముఖ్యమైన హోమం. 
                     కొత్త ఇల్లు, వ్యాపారం, వివాహం, విద్య వంటి అన్ని శుభ కార్యాలకు ముందు నిర్వహించబడుతుంది. 
@@ -224,8 +224,8 @@ const Services = () => {
             </div>
 
             {/* Navagraha Homam */}
-            <div className="card-divine overflow-hidden group">
-              <div className="relative h-56 overflow-hidden">
+            <div className="card-divine overflow-hidden group flex flex-col h-full">
+              <div className="relative h-72 overflow-hidden">
                 <img 
                   src={navagrahaHomam} 
                   alt="నవగ్రహ శాంతి హోమం - గ్రహ దోష నివారణ" 
