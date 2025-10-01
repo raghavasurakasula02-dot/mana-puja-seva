@@ -103,7 +103,7 @@ const Privacy = () => {
               <p className="text-muted-foreground">
                 <strong>Phone:</strong> +91 99891 01037 or +91 88862 07347<br />
                 <strong>WhatsApp:</strong> +91 99891 01037<br />
-                <strong>Website:</strong> www.manapooja.in
+                <strong>Website:</strong> www.manapuja.in
               </p>
             </div>
           </section>

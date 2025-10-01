@@ -78,13 +78,13 @@ const Footer = () => {
                 <span>+91 88862 07347</span>
               </a>
               <a
-                href="https://www.manapooja.in"
+                href="https://www.manapuja.in"
                 className="flex items-center space-x-2 text-sm hover:text-accent transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Globe className="h-4 w-4" />
-                <span>www.manapooja.in</span>
+                <span>www.manapuja.in</span>
               </a>
             </div>
           </div>

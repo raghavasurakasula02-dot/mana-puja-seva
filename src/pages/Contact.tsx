@@ -241,7 +241,7 @@ const Contact = () => {
                     వెబ్‌సైట్
                   </h3>
                 </div>
-                <p className="text-muted-foreground text-xs md:text-sm">www.manapooja.in</p>
+                <p className="text-muted-foreground text-xs md:text-sm">www.manapuja.in</p>
               </div>
             </div>
           </div>
