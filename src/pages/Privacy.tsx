@@ -29,7 +29,7 @@ const Privacy = () => {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-primary mb-4">Information We Collect</h2>
             <p className="text-muted-foreground mb-4">
-              When you contact MANA POOJA for spiritual services, we may collect the following information:
+              When you contact MANA PUJA for spiritual services, we may collect the following information:
             </p>
             <ul className="list-disc list-inside text-muted-foreground space-y-2">
               <li>Name and contact information (phone number, email address)</li>

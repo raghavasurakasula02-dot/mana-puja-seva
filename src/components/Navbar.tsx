@@ -24,8 +24,8 @@ const Navbar = () => {
           <Link to="/" className="flex items-center space-x-3 hover:scale-105 transition-transform duration-300">
             <img 
               src={logo} 
-              alt="MANA POOJA Logo" 
-              className="h-10 w-auto sm:h-12 md:h-14 object-contain" 
+              alt="MANA PUJA Logo" 
+              className="h-10 w-auto sm:h-12 md:h-14 object-contain"
             />
             <span className="text-xl sm:text-2xl md:text-3xl font-bold text-primary font-telugu-serif">
               మన పూజ

@@ -12,8 +12,7 @@ const ScrollingMessage = () => {
         </span>
       </div>
 
-      {/* Tailwind custom animation */}
-      <style jsx>{`
+      <style>{`
         @keyframes scroll {
           0% { transform: translateX(0); }
           100% { transform: translateX(-50%); }

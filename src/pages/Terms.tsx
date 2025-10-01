@@ -29,7 +29,7 @@ const Terms = () => {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-primary mb-4">Acceptance of Terms</h2>
             <p className="text-muted-foreground">
-              By contacting MANA POOJA for spiritual services, you agree to these Terms of Service. 
+              By contacting MANA PUJA for spiritual services, you agree to these Terms of Service. 
               If you do not agree with these terms, please do not use our services.
             </p>
           </section>
@@ -37,7 +37,7 @@ const Terms = () => {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-primary mb-4">Service Description</h2>
             <p className="text-muted-foreground mb-4">
-              MANA POOJA provides traditional Hindu spiritual services including:
+              MANA PUJA provides traditional Hindu spiritual services including:
             </p>
             <ul className="list-disc list-inside text-muted-foreground space-y-2">
               <li>Homams (హోమాలు) - Sacred fire rituals</li>
@@ -88,8 +88,8 @@ const Terms = () => {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-primary mb-4">Limitation of Liability</h2>
             <p className="text-muted-foreground">
-              MANA POOJA provides spiritual services based on traditional Hindu practices. While we perform all 
-              rituals with complete devotion and according to vedic procedures, we cannot guarantee specific 
+              MANA PUJA provides spiritual services based on traditional Hindu practices. While we perform all 
+              rituals with complete devotion and according to vedic procedures, we cannot guarantee specific
               outcomes or results. Our services are provided for spiritual and religious purposes only.
             </p>
           </section>
@@ -98,7 +98,7 @@ const Terms = () => {
             <h2 className="text-2xl font-semibold text-primary mb-4">Intellectual Property</h2>
             <p className="text-muted-foreground">
               All content on this website, including text, images, and design elements, is the property of 
-              MANA POOJA or used with permission. The traditional mantras and procedures used in our services 
+              MANA PUJA or used with permission. The traditional mantras and procedures used in our services 
               are part of the ancient Vedic heritage and are performed with respect to their sacred nature.
             </p>
           </section>

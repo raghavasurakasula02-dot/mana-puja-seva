@@ -12,9 +12,9 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <img src={logo} alt="MANA POOJA" className="h-12 w-12" />
+              <img src={logo} alt="MANA PUJA" className="h-12 w-12" />
               <div>
-                <h3 className="text-xl font-bold font-telugu-serif">MANA POOJA</h3>
+                <h3 className="text-xl font-bold font-telugu-serif">MANA PUJA</h3>
                 <p className="text-sm opacity-90">Traditional Spiritual Services</p>
               </div>
             </div>
@@ -96,7 +96,7 @@ const Footer = () => {
         {/* Bottom Footer */}
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="text-sm opacity-75">
-            <p>&copy; 2025 MANA POOJA. All rights reserved.</p>
+            <p>&copy; 2025 MANA PUJA. All rights reserved.</p>
           </div>
           
           {/* Legal Links */}

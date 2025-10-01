@@ -38,7 +38,7 @@ const Cookies = () => {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-primary mb-4">How We Use Cookies</h2>
             <p className="text-muted-foreground mb-4">
-              MANA POOJA uses cookies for the following purposes:
+              MANA PUJA uses cookies for the following purposes:
             </p>
             <ul className="list-disc list-inside text-muted-foreground space-y-2">
               <li>Essential cookies for website functionality</li>
