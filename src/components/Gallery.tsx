@@ -1,96 +1,42 @@
 import React from 'react';
-import traditionalHomam from '@/assets/traditional-homam-ceremony.jpg';
-import sacredAbhishekam from '@/assets/sacred-abhishekam-ritual.jpg';
-import divineKalyanam from '@/assets/divine-kalyanam-ceremony.jpg';
-import traditionalVratam from '@/assets/traditional-vratam-ceremony.jpg';
-import chandiHomam from '@/assets/chandi-homam.jpg';
-import ganapatiHomam from '@/assets/ganapati-homam.jpg';
-import navagrahaHomam from '@/assets/navagraha-homam.jpg';
-import ayushyaRudraHomam from '@/assets/ayushya-rudra-homam.jpg';
-import shivaAbhishekam from '@/assets/shiva-abhishekam.jpg';
-import ganeshaAbhishekam from '@/assets/ganesha-abhishekam.jpg';
-import venkateswaraKalyanam from '@/assets/venkateswara-kalyanam.jpg';
-import shivaparvatikalyanam from '@/assets/shivaparvati-kalyanam.jpg';
-import varalakshmiVratam from '@/assets/varalakshmi-vratam.jpg';
-import vinayakaChavithiVratam from '@/assets/vinayaka-chavithi-vratam.jpg';
-import templeAmbiance from '@/assets/temple-spiritual-ambiance.jpg';
+import shivaLingamAbhishekam from '@/assets/shiva-lingam-abhishekam.jpg';
+import homamRitualFire from '@/assets/homam-ritual-fire.jpg';
+import homamCeremonyCloseup from '@/assets/homam-ceremony-closeup.jpg';
+import homamFamilyRitual from '@/assets/homam-family-ritual.jpg';
+import navagrahaPooja from '@/assets/navagraha-pooja-setup.jpg';
+import deityOffering from '@/assets/deity-offering-decoration.jpg';
 
 const Gallery = () => {
   const galleryImages = [
     {
-      src: traditionalHomam,
-      alt: 'సాంప్రదాయిక హోమ కార్యక్రమం',
-      title: 'హోమ కార్యక్రమం'
-    },
-    {
-      src: sacredAbhishekam,
-      alt: 'పవిత్ర అభిషేక రిచువల్',
-      title: 'అభిషేక సేవ'
-    },
-    {
-      src: divineKalyanam,
-      alt: 'దైవిక కళ్యాణ వేడుక',
-      title: 'కళ్యాణ వేడుక'
-    },
-    {
-      src: traditionalVratam,
-      alt: 'సాంప్రదాయిక వ్రత కార్యక్రమం',
-      title: 'వ్రత కార్యక్రమం'
-    },
-    {
-      src: chandiHomam,
-      alt: 'చండీ హోమం',
-      title: 'చండీ హోమం'
-    },
-    {
-      src: ganapatiHomam,
-      alt: 'గణపతి హోమం',
-      title: 'గణపతి హోమం'
-    },
-    {
-      src: navagrahaHomam,
-      alt: 'నవగ్రహ హోమం',
-      title: 'నవగ్రహ హోమం'
-    },
-    {
-      src: ayushyaRudraHomam,
-      alt: 'ఆయుష్య రుద్ర హోమం',
-      title: 'ఆయుష్య రుద్ర హోమం'
-    },
-    {
-      src: shivaAbhishekam,
-      alt: 'శివ అభిషేకం',
+      src: shivaLingamAbhishekam,
+      alt: 'శివలింగం అభిషేకం - దివ్య ప్రకాశం',
       title: 'శివ అభిషేకం'
     },
     {
-      src: ganeshaAbhishekam,
-      alt: 'గణేశ అభిషేకం',
-      title: 'గణేశ అభిషేకం'
+      src: homamRitualFire,
+      alt: 'హోమ కార్యక్రమం - పవిత్ర అగ్ని',
+      title: 'హోమ కార్యక్రమం'
     },
     {
-      src: venkateswaraKalyanam,
-      alt: 'వెంకటేశ్వర కళ్యాణం',
-      title: 'వెంకటేశ్వర కళ్యాణం'
+      src: homamCeremonyCloseup,
+      alt: 'హోమ సంప్రదాయ ఆచారం',
+      title: 'హోమ ఆచారం'
     },
     {
-      src: shivaparvatikalyanam,
-      alt: 'శివ పార్వతి కళ్యాణం',
-      title: 'శివ పార్వతి కళ్యాణం'
+      src: homamFamilyRitual,
+      alt: 'కుటుంబ హోమ కార్యక్రమం',
+      title: 'కుటుంబ హోమం'
     },
     {
-      src: varalakshmiVratam,
-      alt: 'వరలక్ష్మి వ్రతం',
-      title: 'వరలక్ష్మి వ్రతం'
+      src: navagrahaPooja,
+      alt: 'నవగ్రహ పూజా అమరిక',
+      title: 'నవగ్రహ పూజ'
     },
     {
-      src: vinayakaChavithiVratam,
-      alt: 'వినాయక చవితి వ్రతం',
-      title: 'వినాయక చవితి వ్రతం'
-    },
-    {
-      src: templeAmbiance,
-      alt: 'ఆలయ ఆధ్యాత్మిక వాతావరణం',
-      title: 'ఆలయ వాతావరణం'
+      src: deityOffering,
+      alt: 'దేవతా నైవేద్య అలంకరణ',
+      title: 'దేవతా అలంకరణ'
     }
   ];
 
